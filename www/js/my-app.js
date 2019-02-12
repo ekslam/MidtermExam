@@ -16,14 +16,9 @@ var app = new Framework7({
         url: 'about.html',
       },
       {
-        name: 'adobo',
-        path: '/adobo/',
-        url: 'adobo.html',
-      },
-      {
-        name: 'afritada',
-        path: '/afritada/',
-        url: 'afritada.html',
+        name: 'm_menu',
+        path: '/m_menu/',
+        url: 'm_menu.html',
       },
       {
         name: 'bulalo',
@@ -36,14 +31,14 @@ var app = new Framework7({
         url: 'roses.html',
       },
       {
-        name: 'sisig',
-        path: '/sisig/',
-        url: 'sisig.html',
+        name: 'menu',
+        path: '/menu/',
+        url: 'menu.html',
       },
       {
-        name: 'tinola',
-        path: '/tinola/',
-        url: 'tinola.html',
+        name: 'timeline',
+        path: '/timeline',
+        url: 'timeline.html',
       }
       
     ],
@@ -61,7 +56,9 @@ var app = new Framework7({
 
   var $$ = Dom7;
 
-//Zack Fair
+
+  //----------------  18 ROSES  ---------------//
+  //Zack Fair
   $$('.popup-zack').on('popup:open', function (e, popup) {
     console.log('Profile Page');
   });
