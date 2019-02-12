@@ -18,14 +18,25 @@
       .backgroundimg {
               height: 100%; /* To fill everything */
               max-width: 100%; /* To fill everything */
-              background: url(lib/img/Aerith.jpg); /* Your Image */
-              background-size: cover; /* To cover everything */
+              background: url(lib/img/Aerith3.png); /* Your Image */
+              background-size: 100%; /* To cover everything */
               /*position: absolute; /*this is most important! */
+              background-repeat: no-repeat;
+              
       }
-
       .fill img {
         width: 100%;
         height: 100%;
+      }
+      .nav-trans {
+        background-color: transparent !important;
+      }
+      .wrapper {
+        text-align: center;
+      }
+      .button{
+        position: absolute;
+        top: 80%;
       }
     </style>
 
@@ -34,7 +45,9 @@
     <!-- App root element -->
     <div id="app">
       <!-- Statusbar overlay -->
-      <div class="statusbar"></div>
+      <div class="statusbar-overlay"></div>
+
+
 
       <!-- Your main view, should have "view-main" class -->
       <div class="view view-main">
@@ -47,25 +60,37 @@
               <div class="title">Debut</div>
             </div>
           </div> -->
-          
-
-          <!-- Toolbar -->
-          <!-- <div class="toolbar">
-            <div class="toolbar-inner"> -->
-              <!-- Toolbar links -->
-            <!-- </div>
-          </div> -->
 
           <!-- Scrollable page content -->
 
               <div data-page="index" class="page page-on-center">
-                  <!--<div class="backgroundimg"></div> -->
-                
-                     <div class="page-content">
-                        <div class=" fill col-100 tablet-50"><img src = "lib/img/Aerith.jpg"></div>
 
-                  </div>
-               </div>
+                  <div class="toolbar toolbar-bottom-md fab-morph-target">
+                      <div class="toolbar-inner">
+                        <!-- Each Toolbar link will close FAB (morph back) on click -->
+                        <a class="link fab-close"></a>
+                        <a class="link" href="/roses/">Accept Invitation</a>
+                        <a class="link fab-close"></a>
+                      </div>
+                    </div>
+                  
+                
+                  <div class="fab fab-center-bottom fab-morph color-blue" data-morph-to=".toolbar">
+                      <a href="#">
+                        <!-- Icons For iOS Theme -->
+                        <i class="icon f7-icons ios-only"></i>
+                        <i class="icon f7-icons ios-only"></i>
+                        <!-- Icons For MD Theme -->
+                        <i class="icon material-icons md-only"></i>
+                        <i class="icon material-icons md-only"></i>
+                      </a>
+                    </div>
+
+
+                    <div class="page-content backgroundimg">
+                        
+                    </div>
+               
             </div>
             
             <!-- Link to another page -->

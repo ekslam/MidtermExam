@@ -2,7 +2,7 @@ var app = new Framework7({
     // App root element
     root: '#app',
     // App Name
-    name: 'My App',
+    name: 'Debut',
     // App id
     id: 'com.myapp.test',
     // Enable swipe panel
@@ -31,9 +31,9 @@ var app = new Framework7({
         url: 'bulalo.html',
       },
       {
-        name: 'kinilaw',
-        path: '/kinilaw/',
-        url: 'kinilaw.html',
+        name: 'roses',
+        path: '/roses/',
+        url: 'roses.html',
       },
       {
         name: 'sisig',
@@ -51,8 +51,156 @@ var app = new Framework7({
     theme:"auto"
   });
   
-  var mainView = app.views.create('.view-main');
+  var mainView = app.views.create('.view-main', {
+    dynamicNavbar: true,
+  });
 
   function ClickMe() {
     app.dialog.alert("Patient Recorded")
   }
+
+  var $$ = Dom7;
+
+//Zack Fair
+  $$('.popup-zack').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-zack').on('popup:opened', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Cloud Strife
+  $$('.popup-cloud').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-cloud').on('popup:opened', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Vincent Valentine
+  $$('.popup-vince').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-vince').on('popup:opened', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Noctis Lucis Caelum
+  $$('.popup-noct').on('popup:open', function (e, popup){
+    console.log('Profile Page');
+  });
+  $$('.popup-noct').on('popup:opened', function(e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Squall Leonhart
+  $$('.popup-leon').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-leon').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Tidus
+  $$('.popup-tidus').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-tidus').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Cid
+  $$('.popup-cid').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-cid').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Zidane Tribal
+  $$('.popup-zidane').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-zidane').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Zell Dincht
+  $$('.popup-zell').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-zell').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Hope Estheim
+  $$('.popup-hope').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-hope').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Balthier
+  $$('.popup-balth').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-balth').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Cecil Harvey
+  $$('.popup-cecil').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-cecil').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Ace
+  $$('.popup-ace').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-ace').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Noel Kreiss
+  $$('.popup-noel').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-noel').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Snow Villiers
+  $$('.popup-snow').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-snow').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Ignis Scientia
+  $$('.popup-ignis').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-ignis').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Gladiolus Amicitia
+  $$('.popup-gladio').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-gladio').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Prompto Argentum
+  $$('.popup-prompto').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-prompto').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });

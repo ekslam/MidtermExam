@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Roses</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+      .textCenter {
+        text-align: center;
+      }
+      
+      .demo-card-header-pic .card-header {
+            height: 40vw;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        .demo-card-header-pic .card-content-padding .date{
+            color: #8e8e93;
+        }
+
+    </style>
+    
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+      <!-- Statusbar overlay -->
+      <!-- <div class="statusbar-overlay"></div> -->
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="roses" class="page">
+
+          <!-- Top Navbar -->
+              <!-- <div class="navbar">
+                <div class="navbar-inner">
+                  <div class="left"></div>
+                  <div class="title">Debut</div>
+                  <div class="right"></div>
+                  <div class="subnavbar">
+                    <div class="subnavbar-inner">
+                      <div class="segmented segmented-raised">
+                        <a class="button tab-link tab-link-active" href="#tab1">Roses</a>
+                        <a class="button tab-link" href="#tab2">Candles</a>
+                        <a class="button tab-link" href="#tab3">Blue Bills</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <div class="navbar">
+                <div class="navbar-inner" >
+                <div class="left">
+                        <a href = "index.html" class="link back">
+                                <i class="icon icon-back"></i>
+                                <span class="ios-only">Back</span>
+                        </a>
+                </div>
+                <div class="subnavbar">
+                  <div class="subnavbar-inner">
+                    <div class="segmented segmented-raised">
+                      <a class="button tab-link tab-link-active left textCenter" href="#tab1">Roses</a>
+                      <a class="button tab-link left" href="#tab2">Candles</a>
+                      <a class="button tab-link left" href="#tab3">Blue Bills</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="title">DEBUT</div>
+                </div>
+            </div>
+              <div class="page-content hide-navbar-on-scroll">
+                <div class="tabs">
+                  <!-- 18 Roses -->
+                  <div class="tab tab-active" id="tab1">
+                    <div class="block">
+                        <div class="list media-list inset">
+                            <ul>
+                              <li>
+                                <a href="#" class="popup-open item-link item-content" data-popup= ".popup-zack">
+                                  <div class="item-media"><img src="https://vignette.wikia.nocookie.net/finalfantasy/images/c/c2/DFFOO_Zack_Fair.png/revision/latest?cb=20190111030541" width="44"/></div>
+                                  <div class="item-inner">
+                                    <div class="item-title-row">
+                                      <div class="item-title">Zack Fair</div>
+                                    </div>
+                                    <div class ="item-subtitle">SOLDIER 1st Class</div>
+                                    <div class = "item-text">1st Rose</div>
+                                  </div>
+                                </a>
+
+                              </li>
+                              <li>
+                                <a href="#" class="popup-open item-link item-content" data-popup = ".popup-cloud">
+                                  <div class="item-media"><img src="https://vignette.wikia.nocookie.net/finalfantasy/images/a/af/DFFOO_Cloud_Strife.png/revision/latest?cb=20180218225248" width="44"/></div>
+                                  <div class="item-inner">
+                                    <div class="item-title-row">
+                                      <div class="item-title">Cloud Strife</div>
+                                    </div>
+                                    <div class = "item-subtitle">SOLDIER 1st Class</div>
+                                    <div class = "item-text">2nd Rose</div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="popup-open item-link item-content" data-popup = ".popup-vince">
+                                  <div class="item-media"><img src="https://vignette.wikia.nocookie.net/finalfantasy/images/a/a1/DFFOO_Vincent_Valentine.png/revision/latest?cb=20190111030522" width="44"/></div>
+                                  <div class="item-inner">
+                                    <div class="item-title-row">
+                                      <div class="item-title">Vincent Valentine</div>
+                                    </div>
+                                    <div class = "item-subtitle">Former Turks / Host of Chaos</div>
+                                    <div class = "item-text">3rd Rose</div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="popup-open item-link item-content" data-popup = ".popup-noct">
+                                    <div class="item-media"><img src="https://vignette.wikia.nocookie.net/finalfantasy/images/3/3f/DFFOO_Noctis.png/revision/latest?cb=20190111025128" width="44"/></div>
+                                    <div class="item-inner">
+                                      <div class="item-title-row">
+                                        <div class="item-title">Noctis Lucis Caelum</div>
+                                      </div>
+                                      <div class = "item-subtitle">Prince of Lucis</div>
+                                      <div class = "item-text">4th Rose</div>
+                                    </div>
+                                  </a>
+                                </li>
+
+                                <li>
+                                  <a href="#" class="popup-open item-link item-content" data-popup = ".popup-leon">
+                                    <div class="item-media"><img src="https://vignette.wikia.nocookie.net/finalfantasy/images/b/b8/DFFOO_Squall.png/revision/latest?cb=20180218225838" width="44"/></div>
+                                    <div class="item-inner">
+                                      <div class="item-title-row">
+                                        <div class="item-title">Squall Leonhart</div>
+                                      </div>
+                                      <div class = "item-subtitle">The Lone Wolf</div>
+                                      <div class = "item-text">5th Rose</div>
+                                    </div>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" class="popup-open item-link item-content" data-popup = ".popup-tidus">
+                                    <div class="item-media"><img src="https://vignette.wikia.nocookie.net/finalfantasy/images/c/c9/DFFOO_Tidus.png/revision/latest?cb=20190111030204" width="44"/></div>
+                                    <div class="item-inner">
+                                      <div class="item-title-row">
+                                        <div class="item-title">Tidus</div>
+                                      </div>
+                                      <div class = "item-subtitle">Blitzball Superstar</div>
+                                      <div class = "item-text">6th Rose</div>
+                                    </div>
+                                  </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="popup-open item-link item-content" data-popup = ".popup-cid">
+                                      <div class="item-media"><img src="https://vignette.wikia.nocookie.net/finalfantasy/images/8/88/DFFOO_Cid_Highwind.png/revision/latest?cb=20190111022737" width="44"/></div>
+                                      <div class="item-inner">
+                                        <div class="item-title-row">
+                                          <div class="item-title">Cid Highwind</div>
+                                        </div>
+                                        <div class = "item-subtitle">Airship Engineer</div>
+                                        <div class = "item-text">7th Rose</div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="popup-open item-link item-content" data-popup = ".popup-zidane">
+                                      <div class="item-media"><img src="https://vignette.wikia.nocookie.net/finalfantasy/images/5/56/DFFOO_Zidane_Tribal.png/revision/latest?cb=20180218225430" width="44"/></div>
+                                      <div class="item-inner">
+                                        <div class="item-title-row">
+                                          <div class="item-title">Zidane Tribal</div>
+                                        </div>
+                                        <div class = "item-subtitle">The Wandering Thief</div>
+                                        <div class = "item-text">8th Rose</div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="popup-open item-link item-content" data-popup = ".popup-zell">
+                                      <div class="item-media"><img src="https://vignette.wikia.nocookie.net/finalfantasy/images/f/fa/DFFOO_Zell.png/revision/latest?cb=20190111030646" width="44"/></div>
+                                      <div class="item-inner">
+                                        <div class="item-title-row">
+                                          <div class="item-title">Zell Dincht</div>
+                                        </div>
+                                        <div class = "item-subtitle">The Cheerful Fighter</div>
+                                        <div class = "item-text">9th Rose</div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="popup-open item-link item-content" data-popup = ".popup-hope">
+                                        <div class="item-media"><img src="https://vignette.wikia.nocookie.net/finalfantasy/images/6/63/DFFOO_Hope_Estheim.png/revision/latest?cb=20180218225624" width="44"/></div>
+                                        <div class="item-inner">
+                                          <div class="item-title-row">
+                                            <div class="item-title">Hope Estheim</div>
+                                          </div>
+                                          <div class = "item-subtitle">The New Hope</div>
+                                          <div class = "item-text">10th Rose</div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#" class="popup-open item-link item-content" data-popup = ".popup-balth">
+                                        <div class="item-media"><img src="https://vignette.wikia.nocookie.net/finalfantasy/images/8/84/DFFOO_Balthier.png/revision/latest?cb=20180423200409" width="44"/></div>
+                                        <div class="item-inner">
+                                          <div class="item-title-row">
+                                            <div class="item-title">Balthier</div>
+                                          </div>
+                                          <div class = "item-subtitle">The Chill Gunslinger</div>
+                                          <div class = "item-text">11th Rose</div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#" class="popup-open item-link item-content" data-popup = ".popup-cecil">
+                                        <div class="item-media"><img src="https://vignette.wikia.nocookie.net/finalfantasy/images/3/3c/DFFOO_Cecil_Dark_Knight.png/revision/latest?cb=20180218224823" width="44"/></div>
+                                        <div class="item-inner">
+                                          <div class="item-title-row">
+                                            <div class="item-title">Cecil Harvey</div>
+                                          </div>
+                                          <div class = "item-subtitle">Twin Soul of Light and Dark</div>
+                                          <div class = "item-text">12th Rose</div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="popup-open item-link item-content" data-popup = ".popup-ace">
+                                          <div class="item-media"><img src="https://vignette.wikia.nocookie.net/finalfantasy/images/a/ad/DFFOO_Ace.png/revision/latest?cb=20190111015935" width="44"/></div>
+                                          <div class="item-inner">
+                                            <div class="item-title-row">
+                                              <div class="item-title">Ace</div>
+                                            </div>
+                                            <div class = "item-subtitle">Leader of Class 0</div>
+                                            <div class = "item-text">13th Rose</div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="popup-open item-link item-content" data-popup = ".popup-noel">
+                                          <div class="item-media"><img src="https://vignette.wikia.nocookie.net/finalfantasy/images/7/72/DFFOO_Noel.png/revision/latest?cb=20190117125451" width="44"/></div>
+                                          <div class="item-inner">
+                                            <div class="item-title-row">
+                                              <div class="item-title">Noel Kreiss</div>
+                                            </div>
+                                            <div class = "item-subtitle">Guardian of Time</div>
+                                            <div class = "item-text">14th Rose</div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="popup-open item-link item-content" data-popup = ".popup-snow">
+                                          <div class="item-media"><img src="https://vignette.wikia.nocookie.net/finalfantasy/images/3/33/DFFOO_Snow.png/revision/latest?cb=20180608210433" width="44"/></div>
+                                          <div class="item-inner">
+                                            <div class="item-title-row">
+                                              <div class="item-title">Snow Villiers</div>
+                                            </div>
+                                            <div class = "item-subtitle">The Cold Hero</div>
+                                            <div class = "item-text">15th Rose</div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                          <a href="#" class="popup-open item-link item-content" data-popup = ".popup-ignis">
+                                            <div class="item-media"><img class = "zoomImg" src="lib/img/ignis.png" width="44"/></div>
+                                            <div class="item-inner">
+                                              <div class="item-title-row">
+                                                <div class="item-title">Ignis Scientia</div>
+                                              </div>
+                                              <div class = "item-subtitle">Prince's Advisor</div>
+                                              <div class = "item-text">16th Rose</div>
+                                            </div>
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="#" class="popup-open item-link item-content" data-popup = ".popup-gladio">
+                                            <div class="item-media"><img src="lib/img/gladio.png" width="44"/></div>
+                                            <div class="item-inner">
+                                              <div class="item-title-row">
+                                                <div class="item-title">Gladioulus Amicitia</div>
+                                              </div>
+                                              <div class = "item-subtitle">The Shield of Lucis</div>
+                                              <div class = "item-text">17th Rose</div>
+                                            </div>
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="#" class="popup-open item-link item-content" data-popup = ".popup-prompto">
+                                            <div class="item-media"><img src="https://vignette.wikia.nocookie.net/finalfantasy/images/1/16/DFFOO_Prompto.png/revision/latest?cb=20190111025641" width="44"/></div>
+                                            <div class="item-inner">
+                                              <div class="item-title-row">
+                                                <div class="item-title">Prompto Argentum</div>
+                                              </div>
+                                              <div class = "item-subtitle">Lucis' Photographer</div>
+                                              <div class = "item-text">18th Rose</div>
+                                            </div>
+                                          </a>
+                                        </li>
+                            </ul>
+                          </div>
+                          
+                            </div>
+
+                    </div>
+
+                    <!-- 18 Candles -->
+                  <div class="tab" id="tab2">
+                    <div class="block">
+                        <div class="list media-list inset">
+                            <ul>
+                              <li>
+                                <a href="#" class="popup-open item-link item-content" data-popup = ".popup-tifa">
+                                  <div class="item-media"><img src="https://vignette.wikia.nocookie.net/finalfantasy/images/6/67/DFFOO_Tifa.png/revision/latest?cb=20180218225234" width="44"/></div>
+                                  <div class="item-inner">
+                                    <div class="item-title-row">
+                                      <div class="item-title">Tifa Lockhart</div>
+                                    </div>
+                                    <div class = "item-subtitle">Fighter of Nibleheim</div>
+                                    <div class = "item-text">1st Candle</div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="popup-open item-link item-content" data-popup = ".popup-yuffie">
+                                  <div class="item-media"><img src="https://vignette.wikia.nocookie.net/finalfantasy/images/0/0d/DFFOO_Yuffie_Kisaragi.png/revision/latest?cb=20180218225301" width="44"/></div>
+                                  <div class="item-inner">
+                                    <div class="item-title-row">
+                                      <div class="item-title">Yuffie Kisaragi</div>
+                                    </div>
+                                    <div class = "item-subtitle">Ninja Princess of Wutai</div>
+                                    <div class = "item-text">2nd Candle</div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="popup-open item-link item-content" data-popup = ".popup-luna">
+                                  <div class="item-media"><img src="lib/img/luna.png" width="44"/></div>
+                                  <div class="item-inner">
+                                    <div class="item-title-row">
+                                      <div class="item-title">Lunafreya Nox Fleuret</div>
+                                    </div>
+                                    <div class = "item-subtitle">Oracle of Tenebrae</div>
+                                    <div class = "item-text">3rd Candle</div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="popup-open item-link item-content" data-popup = ".popup-iris">
+                                    <div class="item-media"><img src="lib/img/iris.png" width="44"/></div>
+                                    <div class="item-inner">
+                                      <div class="item-title-row">
+                                        <div class="item-title">Iris Amicitia</div>
+                                      </div>
+                                      <div class = "item-subtitle">Gladio's Sister</div>
+                                      <div class = "item-text">4th Candle</div>
+                                    </div>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" class="popup-open item-link item-content" data-popup = ".popup-yuna">
+                                    <div class="item-media"><img src="https://vignette.wikia.nocookie.net/finalfantasy/images/2/2c/DFOO_YUNA_2.PNG/revision/latest?cb=20180925214559" width="44"/></div>
+                                    <div class="item-inner">
+                                      <div class="item-title-row">
+                                        <div class="item-title">Yuna</div>
+                                      </div>
+                                      <div class = "item-subtitle">Summoner of Spira</div>
+                                      <div class = "item-text">5th Candle</div>
+                                    </div>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" class="popup-open item-link item-content" data-popup = ".popup-lightning">
+                                    <div class="item-media"><img src="https://vignette.wikia.nocookie.net/finalfantasy/images/e/e4/DFFOO_Lightning_02.png/revision/latest?cb=20180626182502" width="44"/></div>
+                                    <div class="item-inner">
+                                      <div class="item-title-row">
+                                        <div class="item-title">Lightning Farron</div>
+                                      </div>
+                                      <div class = "item-subtitle">Knight of Etro</div>
+                                      <div class = "item-text">6th Candle</div>
+                                    </div>
+                                  </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="item-link item-content">
+                                      <div class="item-media"><img src="lib/img/zack.png" width="44"/></div>
+                                      <div class="item-inner">
+                                        <div class="item-title-row">
+                                          <div class="item-title">Cid</div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="item-link item-content">
+                                      <div class="item-media"><img src="lib/img/cloud.png" width="44"/></div>
+                                      <div class="item-inner">
+                                        <div class="item-title-row">
+                                          <div class="item-title">Zidane Tribal</div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="item-link item-content">
+                                      <div class="item-media"><img src="lib/img/vincent.png" width="44"/></div>
+                                      <div class="item-inner">
+                                        <div class="item-title-row">
+                                          <div class="item-title">Zell Dincht</div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="item-link item-content">
+                                        <div class="item-media"><img src="lib/img/zack.png" width="44"/></div>
+                                        <div class="item-inner">
+                                          <div class="item-title-row">
+                                            <div class="item-title">Hope Estheim</div>
+                                          </div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#" class="item-link item-content">
+                                        <div class="item-media"><img src="lib/img/cloud.png" width="44"/></div>
+                                        <div class="item-inner">
+                                          <div class="item-title-row">
+                                            <div class="item-title">Balthier</div>
+                                          </div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#" class="item-link item-content">
+                                        <div class="item-media"><img src="lib/img/vincent.png" width="44"/></div>
+                                        <div class="item-inner">
+                                          <div class="item-title-row">
+                                            <div class="item-title">Cecil Harvey</div>
+                                          </div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="item-link item-content">
+                                          <div class="item-media"><img src="lib/img/zack.png" width="44"/></div>
+                                          <div class="item-inner">
+                                            <div class="item-title-row">
+                                              <div class="item-title">Ace</div>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="item-link item-content">
+                                          <div class="item-media"><img src="lib/img/cloud.png" width="44"/></div>
+                                          <div class="item-inner">
+                                            <div class="item-title-row">
+                                              <div class="item-title">Noel Kreiss</div>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="item-link item-content">
+                                          <div class="item-media"><img src="lib/img/vincent.png" width="44"/></div>
+                                          <div class="item-inner">
+                                            <div class="item-title-row">
+                                              <div class="item-title">Snow Villiers</div>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                          <a href="#" class="item-link item-content">
+                                            <div class="item-media"><img src="lib/img/zack.png" width="44"/></div>
+                                            <div class="item-inner">
+                                              <div class="item-title-row">
+                                                <div class="item-title">Ignis Scientia</div>
+                                              </div>
+                                            </div>
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="#" class="item-link item-content">
+                                            <div class="item-media"><img src="lib/img/cloud.png" width="44"/></div>
+                                            <div class="item-inner">
+                                              <div class="item-title-row">
+                                                <div class="item-title">Gladioulus Amicitia</div>
+                                              </div>
+                                            </div>
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="#" class="item-link item-content">
+                                            <div class="item-media"><img src="lib/img/vincent.png" width="44"/></div>
+                                            <div class="item-inner">
+                                              <div class="item-title-row">
+                                                <div class="item-title">Prompto Argentum</div>
+                                              </div>
+                                            </div>
+                                          </a>
+                                        </li>
+                            </ul>
+                          </div>
+                    </div>
+                  </div>
+
+                  </div>                    
+                      </div>
+                  
+                  
+
+                  <!-- 18 Blue Bills -->
+                  <div class="tab" id="tab3">
+                    <div class="block">
+                      <p>Etiam non interdum erat. Curabitur erat lacus...</p>
+                    </div>
+                  </div>                             
+                    
+
+                  <!-- (: Close-Popup Area :) -->
+                  <div class = "page-content popup popup-zack">
+                    <center>
+                        <div class="card-content card-content-padding">
+                            <img src = "https://vignette.wikia.nocookie.net/finalfantasy/images/c/c2/DFFOO_Zack_Fair.png/revision/latest?cb=20190111030541" width= "70%"/><br/>
+                            <h3>Zack Fair</h3>
+                            <p class="date">
+                              <b>Soldier First Class</b>
+                            </p>
+                             <b>Relation to the Debutant:</b><br/>
+                             <p style = "text-align:justify">
+                              Zack is one of the first few friends of Aerith. Above all else, Zack cared about Aerith, promising her that someday, he will bring her up to where she can see the blue skies. Even through the tough challenges he faced as a SOLDIER, Zack was able to overcome them with the thought of wanting to see Aerith. He formed a special bond with her, and became closer in just a short amount of time.
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <p>
+                              <a style = "text-align: center"class = "link popup-close" href = "#">Return to List</a>
+                            </p>
+                          </div>
+                        </center>
+                    </div>
+
+
+                <div class = "page-content popup popup-cloud">
+                  <center>
+                    <div class="card-content card-content-padding">
+                        <img src = "https://vignette.wikia.nocookie.net/finalfantasy/images/a/af/DFFOO_Cloud_Strife.png/revision/latest?cb=20180218225248" width= "70%"/><br/>
+                        <h3>Cloud Strife</h3>
+                        <p class="date">
+                          <b>Soldier First Class</b>
+                        </p>
+                         <b>Relation to the Debutant:</b><br/>
+                         <p style = "text-align:justify">
+                          Cloud is one of the few friends of Aerith, and is the best friend of Zack Fair. Cloud met Aerith later on after Zack introduced her to him. The two became close friends, as Cloud, who is known to be moody and serious, became much more open after meeting the two.
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <p>
+                          <a style = "text-align: center"class = "link popup-close" href = "#">Return to List</a>
+                        </p>
+                      </div>
+                    </center>
+                </div>
+
+                <div class = "page-content popup popup-vince">
+                  <center>
+                    <div class="card-content card-content-padding">
+                        <img src = "https://vignette.wikia.nocookie.net/finalfantasy/images/a/a1/DFFOO_Vincent_Valentine.png/revision/latest?cb=20190111030522" width= "70%"/><br/>
+                        <h3>Vincent Valentine</h3>
+                        <p class="date">
+                          <b>Former Turks / Host of Chaos</b>
+                        </p>
+                         <b>Relation to the Debutant:</b><br/>
+                         <p style = "text-align:justify">
+                          Vincent is a silent guy who loves to observe his surroundings. While Cloud was wondering the town with Aerith, they came across Vinent, who is one of Cloud's friends, and introduced him to her. The two became friends, and later on became good friends.
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <p>
+                          <a style = "text-align: center"class = "link popup-close" href = "#">Return to List</a>
+                        </p>
+                      </div>
+                    </center>
+                </div>
+
+                <div class = "page-content popup popup-noct">
+                  <center>
+                    <div class="card-content card-content-padding">
+                        <img src = "https://vignette.wikia.nocookie.net/finalfantasy/images/3/3f/DFFOO_Noctis.png/revision/latest?cb=20190111025128" width= "70%"/><br/>
+                        <h3>Noctis Lucis Caelum</h3>
+                        <p class="date">
+                          <b>Prince of Lucis</b>
+                        </p>
+                         <b>Relation to the Debutant:</b><br/>
+                         <p style = "text-align:justify">
+                          Noctis is the Prince of Lucis, and the next king of the Kingdom of Lucis. Back when he was still a kid, Noctis visited the slums along his father, King Regis, and his bethrothed, Lunafreya. There, they met Aerith a young Aerith, all alone in the slums. Having a break from the purpose of their visit, Noctis and Luna both joined Aerith and played for a while until they became friends.
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <p>
+                          <a style = "text-align: center"class = "link popup-close" href = "#">Return to List</a>
+                        </p>
+                      </div>
+                    </center>
+                </div>
+
+                <div class = "page-content popup popup-leon">
+                  <center>
+                    <div class="card-content card-content-padding">
+                        <img src = "https://vignette.wikia.nocookie.net/finalfantasy/images/b/b8/DFFOO_Squall.png/revision/latest?cb=20180218225838" width= "70%"/><br/>
+                        <h3>Squall Leonhart</h3>
+                        <p class="date">
+                          <b>The Lone Wolf</b>
+                        </p>
+                         <b>Relation to the Debutant:</b><br/>
+                         <p style = "text-align:justify">
+                          Squall Leonhart, or also known as Leon, is a lone wolf mercenary. While on a job outside his country, Squall came across a church in the slums. There he saw a young Aerith, watering the flowers inside. He asked the girl her name, as well as spend some time with her. Before leaving, the young Aerith asked Squall's name, but only gave her his nickname "Leon".
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <p>
+                          <a style = "text-align: center"class = "link popup-close" href = "#">Return to List</a>
+                        </p>
+                      </div>
+                    </center>
+                </div>
+
+                <div class = "page-content popup popup-tidus">
+                    <center>
+                      <div class="card-content card-content-padding">
+                          <img src = "https://vignette.wikia.nocookie.net/finalfantasy/images/c/c9/DFFOO_Tidus.png/revision/latest?cb=20190111030204" width= "70%"/><br/>
+                          <h3>Tidus</h3>
+                          <p class="date">
+                            <b>Blitzball Superstar</b>
+                          </p>
+                           <b>Relation to the Debutant:</b><br/>
+                           <p style = "text-align:justify">
+                            Tidus is known as one of the best in the sport of blitzball. He and Aerith used to play together when Tidus was still in the slums. Talent and hardwork succeeds as time goes by, and Tidus has left the slums to chase his dreams. Although they won't see each other much often, Tidus still carries his bond and memories with Aerith as his special friend.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <p>
+                            <a style = "text-align: center"class = "link popup-close" href = "#">Return to List</a>
+                          </p>
+                        </div>
+                      </center>
+                  </div>
+
+                  <div class = "page-content popup popup-cid">
+                      <center>
+                        <div class="card-content card-content-padding">
+                            <img src = "https://vignette.wikia.nocookie.net/finalfantasy/images/8/88/DFFOO_Cid_Highwind.png/revision/latest?cb=20190111022737" width= "70%"/><br/>
+                            <h3>Cid Highwind</h3>
+                            <p class="date">
+                              <b>Airship Engineer</b>
+                            </p>
+                             <b>Relation to the Debutant:</b><br/>
+                             <p style = "text-align:justify">
+                              Cid has taken care of Aerith ever since she was little. Since the day Aerith lost her parents back when she was still a child, Cid took the responsibility to act as her father, caring for her like his own daughter. Although messy he may seem, Cid is a guy you want to get along with, and a lot of Aerith's friends were introduced by Cid himself. 
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <p>
+                              <a style = "text-align: center"class = "link popup-close" href = "#">Return to List</a>
+                            </p>
+                          </div>
+                        </center>
+                    </div>
+
+                    <div class = "page-content popup popup-zidane">
+                        <center>
+                          <div class="card-content card-content-padding">
+                              <img src = "https://vignette.wikia.nocookie.net/finalfantasy/images/5/56/DFFOO_Zidane_Tribal.png/revision/latest?cb=20180218225430" width= "70%"/><br/>
+                              <h3>Zidane Tribal</h3>
+                              <p class="date">
+                                <b>The Wandering Thief</b>
+                              </p>
+                               <b>Relation to the Debutant:</b><br/>
+                               <p style = "text-align:justify">
+                                While traversing around the different areas of the world, Zidane once sat upon the Midgar, which he heard is very fammous for it's Mako Stones, materia generated to produce energy such as power generator. Zidane used this opportunity to enter the city, to which he found a certain materia that caught his eyes. After stealing the materia, Zidane thought he was safe, but was caught by Zack Fair, and was brought back to the owner, Aerith, to apologize. Aerith, being as forgiving as she is, forgave Zidane, and became friends afterwards. Zidane, who was once known as one of the experts in stealing, became lenient with it thanks to Aerith's endless lecture.
+                              </p>
+                            </div>
+                            <div class="card-footer">
+                              <p>
+                                <a style = "text-align: center"class = "link popup-close" href = "#">Return to List</a>
+                              </p>
+                            </div>
+                          </center>
+                      </div>
+
+                      <div class = "page-content popup popup-zell">
+                          <center>
+                            <div class="card-content card-content-padding">
+                                <img src = "https://vignette.wikia.nocookie.net/finalfantasy/images/f/fa/DFFOO_Zell.png/revision/latest?cb=20190111030646" width= "70%"/><br/>
+                                <h3>Zell Dincht</h3>
+                                <p class="date">
+                                  <b>The Cheerful Fighter</b>
+                                </p>
+                                 <b>Relation to the Debutant:</b><br/>
+                                 <p style = "text-align:justify">
+                                  Squall Leonhart's close friend who fought alongside him, even though Squall is known of his "lone wolf" style. A cheerful fighter who loves to hang around with anyone he deems friendly. Zell became friends with Aerith during their visit with Squall when she was still little. They quickly became friends, seeing how Zell has a friendly personality with almost anyone.
+                                </p>
+                              </div>
+                              <div class="card-footer">
+                                <p>
+                                  <a style = "text-align: center"class = "link popup-close" href = "#">Return to List</a>
+                                </p>
+                              </div>
+                            </center>
+                        </div>
+
+                        <div class = "page-content popup popup-hope">
+                            <center>
+                              <div class="card-content card-content-padding">
+                                  <img src = "https://vignette.wikia.nocookie.net/finalfantasy/images/6/63/DFFOO_Hope_Estheim.png/revision/latest?cb=20180218225624" width= "70%"/><br/>
+                                  <h3>Hope Estheim</h3>
+                                  <p class="date">
+                                    <b>The New Hope</b>
+                                  </p>
+                                   <b>Relation to the Debutant:</b><br/>
+                                   <p style = "text-align:justify">
+                                    Hope Estheim is one of the core leaders of The Academy held near Midgar. Shortwhile after Aerith has gone up from the slums to Midgar, she enrolled to The Academy to receive proper education. Hope apparently became her teacher and also her close friend. Having experienced the same feeling of losing your parents at a young age, Hope desires to guide Aerith in her journey in order for her to avoid the experience he had experienced.
+                                  </p>
+                                </div>
+                                <div class="card-footer">
+                                  <p>
+                                    <a style = "text-align: center"class = "link popup-close" href = "#">Return to List</a>
+                                  </p>
+                                </div>
+                              </center>
+                          </div>
+
+                          <div class = "page-content popup popup-balth">
+                              <center>
+                                <div class="card-content card-content-padding">
+                                    <img src = "https://vignette.wikia.nocookie.net/finalfantasy/images/8/84/DFFOO_Balthier.png/revision/latest?cb=20180423200409" width= "50%"/><br/>
+                                    <h3>Balthier</h3>
+                                    <p class="date">
+                                      <b>The Sky-Pirate Gunslinger</b>
+                                    </p>
+                                     <b>Relation to the Debutant:</b><br/>
+                                     <p style = "text-align:justify">
+                                      Balthier is a well-known sky-pirate at Ivalice with his accomplice, Fran. During an attempt to steal from SHINRA Company, Balthier encounters Aeirth sobbing outside the gate. When his plan goes awry Balthier finds himself a part of a conflict between what is right and wrong. and that could lead to war. Because of this incident, Balthier thanked Aerith for that day, and thus became friends.
+                                    </p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <p>
+                                      <a style = "text-align: center"class = "link popup-close" href = "#">Return to List</a>
+                                    </p>
+                                  </div>
+                                </center>
+                            </div>
+
+                            <div class = "page-content popup popup-cecil">
+                                <center>
+                                  <div class="card-content card-content-padding">
+                                      <img src = "https://vignette.wikia.nocookie.net/finalfantasy/images/3/3c/DFFOO_Cecil_Dark_Knight.png/revision/latest?cb=20180218224823" width= "80%"/><br/>
+                                      <h3>Cecil Harvey</h3>
+                                      <p class="date">
+                                        <b>Twin Soul of Light and Dark</b>
+                                      </p>
+                                       <b>Relation to the Debutant:</b><br/>
+                                       <p style = "text-align:justify">
+                                        Cecil is the Prince of Baron, and the captain of the Red Baron Airship. While on a task to investigate Midgar's mysterious materia, Cecil met across Aerith, who later on guides him in his inverstigation. Proving the task assigned to Cecil was nothing but a lie, Cecil returns to his homeland, while promising Aerith that someday, they will see each other again, not as companions, but as friends.
+                                      </p>
+                                    </div>
+                                    <div class="card-footer">
+                                      <p>
+                                        <a style = "text-align: center"class = "link popup-close" href = "#">Return to List</a>
+                                      </p>
+                                    </div>
+                                  </center>
+                              </div>
+
+                              <div class = "page-content popup popup-ace">
+                                  <center>
+                                    <div class="card-content card-content-padding">
+                                        <img src = "https://vignette.wikia.nocookie.net/finalfantasy/images/a/ad/DFFOO_Ace.png/revision/latest?cb=20190111015935" width= "50%"/><br/>
+                                        <h3>Ace</h3>
+                                        <p class="date">
+                                          <b>Leader of Class 0</b>
+                                        </p>
+                                         <b>Relation to the Debutant:</b><br/>
+                                         <p style = "text-align:justify">
+                                          Ace is a student at the Academy, and is the representative / leader of the famous Class 0. As one of the known leaders of the school, Ace guided the newly enrolled Aerith around the campus, giving her a tour of the school she would be attending to. Ace, as the role model of the school, gave off the impression of a cool and serious leader,but due to Aerith's personality. he became much more open and true to himself. 
+                                        </p>
+                                      </div>
+                                      <div class="card-footer">
+                                        <p>
+                                          <a style = "text-align: center"class = "link popup-close" href = "#">Return to List</a>
+                                        </p>
+                                      </div>
+                                    </center>
+                                </div>
+
+                                <div class = "page-content popup popup-noel">
+                                    <center>
+                                      <div class="card-content card-content-padding">
+                                          <img src = "https://vignette.wikia.nocookie.net/finalfantasy/images/7/72/DFFOO_Noel.png/revision/latest?cb=20190117125451" width= "70%"/><br/>
+                                          <h3>Noel Kreiss</h3>
+                                          <p class="date">
+                                            <b>Guardian of Time</b>
+                                          </p>
+                                           <b>Relation to the Debutant:</b><br/>
+                                           <p style = "text-align:justify">
+                                            Noel is a guardian who travels through time to protect the peace of each timeline in order to prevent a time paradox. After traversing through the timeline of Midgar, Noel came across Aerith during to one of his visits to prevent a paradox. Along with Aerith's friends, they were able to prevent a paradox from happening, and Noel thanked his newly found friends for their help. 
+                                          </p>
+                                        </div>
+                                        <div class="card-footer">
+                                          <p>
+                                            <a style = "text-align: center"class = "link popup-close" href = "#">Return to List</a>
+                                          </p>
+                                        </div>
+                                      </center>
+                                  </div>
+
+                                  <div class = "page-content popup popup-snow">
+                                      <center>
+                                        <div class="card-content card-content-padding">
+                                            <img src = "https://vignette.wikia.nocookie.net/finalfantasy/images/3/33/DFFOO_Snow.png/revision/latest?cb=20180608210433" width= "50%"/><br/>
+                                            <h3>Snow Villiers</h3>
+                                            <p class="date">
+                                              <b>The Cold Hero</b>
+                                            </p>
+                                             <b>Relation to the Debutant:</b><br/>
+                                             <p style = "text-align:justify">
+                                              Snow is a known local hero in the slums of Midgar. He acts as the older brother of to every single person in the area, especially to Aerith. His motto "He who protects, no matter how hard the cirumstance is, deserves to be called a Hero" always makes hiim act with bravery and perseverence. Even though they are not blood-related, Snow still treats Aerith just like his actual sister, although there are times he goes overprotective, especially to Zack, afraid he would steal his sister from him.
+                                            </p>
+                                          </div>
+                                          <div class="card-footer">
+                                            <p>
+                                              <a style = "text-align: center"class = "link popup-close" href = "#">Return to List</a>
+                                            </p>
+                                          </div>
+                                        </center>
+                                    </div>
+
+                                    <div class = "page-content popup popup-ignis">
+                                        <center>
+                                          <div class="card-content card-content-padding">
+                                              <img src = "lib/img/ignis.png" width= "60%"/><br/>
+                                              <h3>Ignis Scientia</h3>
+                                              <p class="date">
+                                                <b>Prince's Advisor</b>
+                                              </p>
+                                               <b>Relation to the Debutant:</b><br/>
+                                               <p style = "text-align:justify">
+                                                Ignis is the royal advisor of the Prince Noctis of Lucis, and is one of Noct's best friend. "They who grew up together, stays together", this has been the case of both Noctis and Ignis. During the visit to the slums along with King Regis, Luna and Noct, Ignis also accompanied them per in line to his duties as Noct's advisor. Ignis,after seeing Noct became friends with Aerith, became wary of her. But after knowing her for awhile, Ignis released his suspicion and also accepted her as one of Noct's friends.
+                                              </p>
+                                            </div>
+                                            <div class="card-footer">
+                                              <p>
+                                                <a style = "text-align: center"class = "link popup-close" href = "#">Return to List</a>
+                                              </p>
+                                            </div>
+                                          </center>
+                                      </div>
+
+                                      <div class = "page-content popup popup-gladio">
+                                          <center>
+                                            <div class="card-content card-content-padding">
+                                                <img src = "lib/img/gladio.png" width= "80%"/><br/>
+                                                <h3>Gladioulus Amicitia</h3>
+                                                <p class="date">
+                                                  <b>The Shield of Lucis</b>
+                                                </p>
+                                                 <b>Relation to the Debutant:</b><br/>
+                                                 <p style = "text-align:justify">
+                                                  Gladioulus is a profound Knight of Lucis, and serves as the shield of Prince Noctis. During Noct's early childhood, Gladio has trained him to use the sword to protect himself from any danger. Since then, Noct founds Gladio as one who acts like his older brother, but also as his best friend. During the King's visit in the slums of Midgar, Gladio accompanied Noct to meeting Aerith, along with a few others. Having a little sister of his own, Gladio easily became friends with the young Aerith, and the two became close friends afterwards.
+                                                </p>
+                                              </div>
+                                              <div class="card-footer">
+                                                <p>
+                                                  <a style = "text-align: center"class = "link popup-close" href = "#">Return to List</a>
+                                                </p>
+                                              </div>
+                                            </center>
+                                        </div>
+
+                                        <div class = "page-content popup popup-prompto">
+                                            <center>
+                                              <div class="card-content card-content-padding">
+                                                  <img src = "https://vignette.wikia.nocookie.net/finalfantasy/images/1/16/DFFOO_Prompto.png/revision/latest?cb=20190111025641" width= "40%"/><br/>
+                                                  <h3>Prompto Argentum</h3>
+                                                  <p class="date">
+                                                    <b>Lucis' Phtographer</b>
+                                                  </p>
+                                                   <b>Relation to the Debutant:</b><br/>
+                                                   <p style = "text-align:justify">
+                                                    Prompto is one of Noctis' close friends during his time at school. Accompanying Noct to everywhere he goes, he became close to Noct, and the two became best friends. Noctis, while on his trip to visit Midgar along with Ignis, Gladio and Prompto, met Aerith, who is now the same age as the Prince himself. Prompto, amazed by the pretty lady, took a picture of her with his camera. When Prompto was about to ask her out, Ignis stops him saying he should "think about it", pointing to the man Aerith's side, who is revealed to be Zack Fair. Bitter at heart, Prompto still went ahead and instead of pursuing her, became friends with the lady-like Aerith.
+                                                  </p>
+                                                </div>
+                                                <div class="card-footer">
+                                                  <p>
+                                                    <a style = "text-align: center"class = "link popup-close" href = "#">Return to List</a>
+                                                  </p>
+                                                </div>
+                                              </center>
+                                          </div>
+
+                          
+
+              </div>
+            </div>
+            
+            
+            </div>
+          </div>
+          
+
+          <!-- Toolbar -->
+          <div class="toolbar">
+              
+            <div class="toolbar-inner">
+              <!-- Toolbar links -->
+            </div>
+          </div>
+
+          
+                        
+              </center>
+            </div>
+
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+<!-- Path to your app js-->
+<script type="text/javascript" src="js/my-app.js"></script>
+</body>
+</html>
