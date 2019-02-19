@@ -15,16 +15,33 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <style>
-      .page-content{
-        background-color: #f4eff4
-      }
       .item-link{
         background-color: #ffffff
+      }
+
+      table.center {
+        margin-left:auto; 
+        margin-right:auto;
+      }
+
+      floatCenter {
+        display: block;
+        margin: auto;
+        width: 100%;
+      }
+
+      .bckgroundMenu {
+        height: 100%; /* To fill everything */
+        max-width: 100%; /* To fill everything */
+        background: url(lib/img/white.jpg);
+        background-size: cover; /* To cover everything */
+              /*position: absolute; /*this is most important! */
+        background-repeat: no-repeat;
       }
     </style>
 
   </head>
-  <body>
+  <body class = "page-content bckgroundMenu">
     <!-- App root element -->
     <div id="app">
       <!-- Statusbar overlay -->
@@ -42,6 +59,20 @@
             </div>
           </div>-->
 
+          <div style = "background-image: url('lib/img/back.jpg')" class="navbar">
+            <div class="navbar-inner" >
+            <div class="left">
+                    <a href = "index.html" class="link back">
+                            <i class="icon icon-back"></i>
+                            <span class="ios-only color-black">Back</span>
+                    </a>
+            </div>
+            <div class = "title">
+              Menu
+            </div>
+          </div>
+          </div>
+
           <!-- Toolbar -->
           <!--<div class="toolbar">
             <div class="toolbar-inner">-->
@@ -50,14 +81,12 @@
           </div>-->
 
           <!-- Scrollable page content -->
-          <div class="page-content">
-              
-              <center><h1>Menu</h1></center>
+          <div class="page-content bckgroundMenu">
 
             <div class="list media-list inset">
               <ul>
                 <li>
-                  <a href="#" class="item-link item-content">
+                  <a href="#" class="popup-open item-link item-content" data-popup = ".popup-sushi">
                     <div class="item-media"><img src="lib/img/menu/Scientia_Style_Sushi.jpg" width="44"/></div>
                     <div class="item-inner">
                       <div class="item-title-row">
@@ -67,8 +96,9 @@
                     </div>
                   </a>
                 </li>
+
                 <li>
-                  <a href="#" class="item-link item-content">
+                  <a href="#" class="popup-open item-link item-content" data-popup = ".popup-hearty">
                     <div class="item-media"><img src="lib/img/menu/Hearty-Stir-Fry-Recipe-FFXV.png" width="44"/></div>
                     <div class="item-inner">
                       <div class="item-title-row">
@@ -78,8 +108,9 @@
                     </div>
                   </a>
                 </li>
+
                 <li>
-                  <a href="#" class="item-link item-content">
+                  <a href="#" class="popup-open item-link item-content" data-popup = ".popup-salad">
                     <div class="item-media"><img src="lib/img/menu/image.png" width="44"/></div>
                     <div class="item-inner">
                       <div class="item-title-row">
@@ -89,8 +120,9 @@
                     </div>
                   </a>
                 </li>
+
                 <li>
-                  <a href="#" class="item-link item-content">
+                  <a href="#" class="popup-open item-link item-content" data-popup = ".popup-skewers">
                     <div class="item-media"><img src="lib/img/menu/semur_skewers.png" width="44"/></div>
                     <div class="item-inner">
                       <div class="item-title-row">
@@ -100,8 +132,9 @@
                     </div>
                   </a>
                 </li>
+
                 <li>
-                  <a href="#" class="item-link item-content">
+                  <a href="#" class="popup-open item-link item-content" data-popup = ".popup-tart">
                     <div class="item-media"><img src="lib/img/menu/Golden_Chocobo_Tart.jpg" width="44"/></div>
                     <div class="item-inner">
                       <div class="item-title-row">
@@ -111,8 +144,9 @@
                     </div>
                   </a>
                 </li>
+
                 <li>
-                  <a href="#" class="item-link item-content">
+                  <a href="#" class="popup-open item-link item-content" data-popup = ".popup-berry">
                     <div class="item-media"><img src="lib/img/menu/Kupoberry_Cheesecake.png" width="44"/></div>
                     <div class="item-inner">
                       <div class="item-title-row">
@@ -122,9 +156,10 @@
                     </div>
                   </a>
                 </li>
+
                 <li>
-                  <a href="#" class="item-link item-content">
-                    <div class="item-media"><img src="lib/img/menu/Longwythe's_Peak.jpg" width="44"/></div>
+                  <a href="#" class="popup-open item-link item-content" data-popup = ".popup-peak">
+                    <div class="item-media"><img src="lib/img/menu/Longwythe_s_Peak.jpg" width="44"/></div>
                     <div class="item-inner">
                       <div class="item-title-row">
                         <div class="item-title">Longwythe's Peak</div>
@@ -133,8 +168,9 @@
                     </div>
                   </a>
                 </li>
+
                 <li>
-                  <a href="#" class="item-link item-content">
+                  <a href="#" class="popup-open item-link item-content" data-popup = ".popup-gar">
                     <div class="item-media"><img src="lib/img/menu/Oak-Smoked_Devil_Gar.jpg" width="44"/></div>
                     <div class="item-inner">
                       <div class="item-title-row">
@@ -144,9 +180,10 @@
                     </div>
                   </a>
                 </li>
+
                 <li>
-                  <a href="#" class="item-link item-content">
-                    <div class="item-media"><img src="lib/img/menu/King's_Stew.jpg" width="44"/></div>
+                  <a href="#" class="popup-open item-link item-content" data-popup = ".popup-stew">
+                    <div class="item-media"><img src="lib/img/menu/King_s_Stew.jpg" width="44"/></div>
                     <div class="item-inner">
                       <div class="item-title-row">
                         <div class="item-title">King's Stew</div>
@@ -155,8 +192,9 @@
                     </div>
                   </a>
                 </li>
+
                 <li>
-                  <a href="#" class="item-link item-content">
+                  <a href="#" class="popup-open item-link item-content" data-popup = ".popup-pastry">
                     <div class="item-media"><img src="lib/img/menu/Memory_Lane_Pastry.jpg" width="44"/></div>
                     <div class="item-inner">
                       <div class="item-title-row">
@@ -166,19 +204,21 @@
                     </div>
                   </a>
                 </li>
+
                 <li>
-                  <a href="#" class="item-link item-content">
+                  <a href="#" class="popup-open item-link item-content" data-popup = ".popup-soup">
                     <div class="item-media"><img src="lib/img/menu/Golden_Tail_Soup.jpg" width="44"/></div>
                     <div class="item-inner">
                       <div class="item-title-row">
-                        <div class="item-title">Golden Trail Soup</div>
+                        <div class="item-title">Golden Tail Soup</div>
                       </div>
                       <div class="item-subtitle">Soup</div>
                     </div>
                   </a>
                 </li>
+
                 <li>
-                  <a href="#" class="item-link item-content">
+                  <a href="#" class="popup-open item-link item-content" data-popup = ".popup-carpaccio">
                     <div class="item-media"><img src="lib/img/menu/tide_grouper_carpaccio.jpg" width="44"/></div>
                     <div class="item-inner">
                       <div class="item-title-row">
@@ -188,8 +228,9 @@
                     </div>
                   </a>
                 </li>
+
                 <li>
-                  <a href="#" class="item-link item-content">
+                  <a href="#" class="popup-open item-link item-content" data-popup = ".popup-devilfin">
                     <div class="item-media"><img src="lib/img/menu/devilfin_soup.jpg" width="44"/></div>
                     <div class="item-inner">
                       <div class="item-title-row">
@@ -199,8 +240,9 @@
                     </div>
                   </a>
                 </li>
+
                 <li>
-                  <a href="#" class="item-link item-content">
+                  <a href="#" class="popup-open item-link item-content" data-popup = ".popup-curry">
                     <div class="item-media"><img src="lib/img/menu/Sweet_Saltwater_Crustacean_Curry.jpg" width="44"/></div>
                     <div class="item-inner">
                       <div class="item-title-row">
@@ -213,6 +255,587 @@
               </ul>
             </div>
 
+
+            <!-- Menu Popup -->
+            <div class = "page-content popup popup-sushi">
+                <center>
+                    <div class="card-content card-content-padding">
+                        <img src = "lib/img/menu/Scientia_Style_Sushi.jpg" width= "70%"/><br/>
+                        <h3>Scientia Style Sushi</h3>
+                        <p class="date">
+                          <p>
+                            A simple, yet delicate dish to start your meal.
+                          </p>       
+                      </div>
+                      <div class="card-footer">
+                        <table style = "width:100%">
+                          <tr>
+                            <td class = "floatCenter">Ingredients</td>
+                            <td>
+                              <ul>
+                                <li>
+                                  Bluefin Tuna Fillet
+                                </li>
+                                <li>
+                                  Personal Mixed Soy Sauce
+                                </li>
+                              </ul>
+                            </td>
+                          </tr>
+                        </table>                 
+                      </div>  
+                    </center>
+                    <div class = "row">
+                      <div class = "col-80">
+                        <button class = "button button-fill color-orange small link popup-close" href = "#">Return to List</button>
+                      </div>
+                      
+                    </div>
+
+                </div>
+
+            <div class = "page-content popup popup-hearty">
+                <center>
+                    <div class="card-content card-content-padding">
+                        <img src = "lib/img/menu/Hearty-Stir-Fry-Recipe-FFXV.png" width= "70%"/><br/>
+                        <h3>Hearty Stir Fry</h3>
+                        <p class="date">
+                          <p>
+                            A simple, yet delicate dish to start your meal.
+                          </p>       
+                      </div>
+                      <div class="card-footer">
+                        <table style = "width:100%">
+                          <tr>
+                            <td class = "floatCenter">Ingredients</td>
+                            <td>
+                              <ul>
+                                <li>
+                                  Griffon Breast
+                                </li>
+                                <li>
+                                  Wild Onion
+                                </li>
+                                <li>
+                                  Garlic
+                                </li>
+                              </ul>
+                            </td>
+                          </tr>
+                        </table>                 
+                      </div>  
+                    </center>
+                    <div class = "row">
+                      <div class = "col-10"></div>
+                      <div class = "col-80">
+                        <button style = "position:relative"class = "button button-fill color-orange small link popup-close" href = "#">Return to List</button>
+                      </div>
+                      <div class = "col-10"></div>
+                      
+                    </div>
+
+                </div>
+
+                <div class = "page-content popup popup-salad">
+                    <center>
+                        <div class="card-content card-content-padding">
+                            <img src = "lib/img/menu/image.png" width= "70%"/><br/>
+                            <h3>Keycatrich Salad</h3>
+                            <p class="date">
+                              <p>
+                                A simple, yet delicate dish to start your meal.
+                              </p>       
+                          </div>
+                          <div class="card-footer">
+                            <table style = "width:100%">
+                              <tr>
+                                <td class = "floatCenter">Ingredients</td>
+                                <td>
+                                  <ul>
+                                    <li>
+                                      Aegir Root
+                                    </li>
+                                    <li>
+                                      Lucian
+                                    </li>
+                                    <li>
+                                      Tomato
+                                    </li>
+                                    <li>
+                                      Sheep Milk
+                                    </li>
+                                  </ul>
+                                </td>
+                              </tr>
+                            </table>                 
+                          </div>  
+                        </center>
+                        <div class = "row">
+                          <div class = "col-10"></div>
+                          <div class = "col-80">
+                            <button class = "button button-fill color-orange small link popup-close" href = "#">Return to List</button>
+                          </div>
+                          <div class = "col-10"></div>
+                          
+                        </div>
+    
+                    </div>
+    
+            <div class = "page-content popup popup-skewers">
+                <center>
+                    <div class="card-content card-content-padding">
+                        <img src = "lib/img/menu/semur_skewers.png" width= "70%"/><br/>
+                        <h3>Semur Skewers</h3>
+                        <p class="date">
+                          <p>
+                            A simple, yet delicate dish to start your meal.
+                          </p>       
+                      </div>
+                      <div class="card-footer">
+                        <table style = "width:100%">
+                          <tr>
+                            <td class = "floatCenter">Ingredients</td>
+                            <td>
+                              <ul>
+                                <li>
+                                  Garulessa Steak
+                                </li>
+                                <li>
+                                  Aegir Root
+                                </li>
+                                <li>
+                                  Garlic
+                                </li>
+                              </ul>
+                            </td>
+                          </tr>
+                        </table>                 
+                      </div>  
+                    </center>
+                    <div class = "row">
+                      <div class = "col-10"></div>
+                      <div class = "col-80">
+                        <button class = "button button-fill color-orange small link popup-close" href = "#">Return to List</button>
+                      </div>
+                      <div class = "col-10"></div>
+                      
+                    </div>
+
+                </div>
+                <div class = "page-content popup popup-tart">
+                    <center>
+                        <div class="card-content card-content-padding">
+                            <img src = "lib/img/menu/Golden_Chocobo_Tart.jpg" width= "70%"/><br/>
+                            <h3>Golden Chocobo Tart</h3>
+                            <p class="date">
+                              <p>
+                                A simple, yet delicate dish to start your meal.
+                              </p>       
+                          </div>
+                          <div class="card-footer">
+                            <table style = "width:100%">
+                              <tr>
+                                <td class = "floatCenter">Ingredients</td>
+                                <td>
+                                  <ul>
+                                    <li>
+                                      Sheep Milk
+                                    </li>
+                                    <li>
+                                      Birdbeast Egg
+                                    </li>
+                                    <li>
+                                      Fine Gighee
+                                    </li>
+                                    <li>
+                                      Ham
+                                    </li>
+                                  </ul>
+                                </td>
+                              </tr>
+                            </table>                 
+                          </div>  
+                        </center>
+                        <div class = "row">
+                          <div class = "col-10"></div>
+                          <div class = "col-80">
+                            <button class = "button button-fill color-orange small link popup-close" href = "#">Return to List</button>
+                          </div>
+                          <div class = "col-10"></div>
+                          
+                        </div>
+    
+                    </div>
+    
+                    <div class = "page-content popup popup-berry">
+                        <center>
+                            <div class="card-content card-content-padding">
+                                <img src = "lib/img/menu/Kupoberry_Cheesecake.png" width= "70%"/><br/>
+                                <h3>Kupoberry Cheesecake</h3>
+                                <p class="date">
+                                  <p>
+                                    A simple, yet delicate dish to start your meal.
+                                  </p>       
+                              </div>
+                              <div class="card-footer">
+                                <table style = "width:100%">
+                                  <tr>
+                                    <td class = "floatCenter">Ingredients</td>
+                                    <td>
+                                      <ul>
+                                        <li>
+                                          Duscaean Orange
+                                        </li>
+                                        <li>
+                                          Leiden Sweet Potato
+                                        </li>
+                                        <li>
+                                          Sheep Milk
+                                        </li>
+                                      </ul>
+                                    </td>
+                                  </tr>
+                                </table>                 
+                              </div>  
+                            </center>
+                            <div class = "row">
+                              <div class = "col-10"></div>
+                              <div class = "col-80">
+                                <button class = "button button-fill color-orange small link popup-close" href = "#">Return to List</button>
+                              </div>
+                              <div class = "col-10"></div>
+                              
+                            </div>
+        
+                        </div>       
+
+          <div class = "page-content popup popup-peak">
+                <center>
+                    <div class="card-content card-content-padding">
+                        <img src = "lib/img/menu/Longwythe_s_Peak.jpg" width= "70%"/><br/>
+                        <h3>Longwythe's Peak</h3>
+                        <p class="date">
+                          <p>
+                            A simple, yet delicate dish to start your meal.
+                          </p>       
+                      </div>
+                      <div class="card-footer">
+                        <table style = "width:100%">
+                          <tr>
+                            <td class = "floatCenter">Ingredients</td>
+                            <td>
+                              <ul>
+                                <li>
+                                  Adamantoise Meat
+                                </li>
+                                <li>
+                                  Kettier Ginger
+                                </li>
+                              </ul>
+                            </td>
+                          </tr>
+                        </table>                 
+                      </div>  
+                    </center>
+                    <div class = "row">
+                      <div class = "col-10"></div>
+                      <div class = "col-80">
+                        <button class = "button button-fill color-orange small link popup-close" href = "#">Return to List</button>
+                      </div>
+                      <div class = "col-10"></div>
+                      
+                    </div>
+
+                </div>
+
+            <div class = "page-content popup popup-gar">
+                <center>
+                    <div class="card-content card-content-padding">
+                        <img src = "lib/img/menu/Oak-Smoked_Devil_Gar.jpg" width= "70%"/><br/>
+                        <h3>Oak Smoked Devil Gar</h3>
+                        <p class="date">
+                          <p>
+                            A simple, yet delicate dish to start your meal.
+                          </p>       
+                      </div>
+                      <div class="card-footer">
+                        <table style = "width:100%">
+                          <tr>
+                            <td class = "floatCenter">Ingredients</td>
+                            <td>
+                              <ul>
+                                <li>
+                                  Devil Gar Fillet
+                                </li>
+                                <li>
+                                  Tenebraen Oak
+                                </li>
+                              </ul>
+                            </td>
+                          </tr>
+                        </table>                 
+                      </div>  
+                    </center>
+                    <div class = "row">
+                      <div class = "col-10"></div>
+                      <div class = "col-80">
+                        <button class = "button button-fill color-orange small link popup-close" href = "#">Return to List</button>
+                      </div>
+                      <div class = "col-10"></div>
+                      
+                    </div>
+
+                </div>
+
+                <div class = "page-content popup popup-stew">
+                    <center>
+                        <div class="card-content card-content-padding">
+                            <img src = "lib/img/menu/King_s_Stew.jpg" width= "70%"/><br/>
+                            <h3>King's Stew</h3>
+                            <p class="date">
+                              <p>
+                                A simple, yet delicate dish to start your meal.
+                              </p>       
+                          </div>
+                          <div class="card-footer">
+                            <table style = "width:100%">
+                              <tr>
+                                <td class = "floatCenter">Ingredients</td>
+                                <td>
+                                  <ul>
+                                    <li>
+                                      Behemoth Tenderloin
+                                    </li>
+                                    <li>
+                                      Griffon Breast
+                                    </li>
+                                    <li>
+                                      Kujata Marrow
+                                    </li>
+                                  </ul>
+                                </td>
+                              </tr>
+                            </table>                 
+                          </div>  
+                        </center>
+                        <div class = "row">
+                          <div class = "col-10"></div>
+                          <div class = "col-80">
+                            <button class = "button button-fill color-orange small link popup-close" href = "#">Return to List</button>
+                          </div>
+                          <div class = "col-10"></div>
+                          
+                        </div>
+    
+                    </div>
+    
+                    <div class = "page-content popup popup-pastry">
+                        <center>
+                            <div class="card-content card-content-padding">
+                                <img src = "lib/img/menu/Memory_Lane_Pastry.jpgg" width= "70%"/><br/>
+                                <h3>Memory Lane Pastry</h3>
+                                <p class="date">
+                                  <p>
+                                    A simple, yet delicate dish to start your meal.
+                                  </p>       
+                              </div>
+                              <div class="card-footer">
+                                <table style = "width:100%">
+                                  <tr>
+                                    <td class = "floatCenter">Ingredients</td>
+                                    <td>
+                                      <ul>
+                                        <li>
+                                          Leiden Sweet Potato
+                                        </li>
+                                        <li>
+                                          Fine Cleigne Wheat
+                                        </li>
+                                        <li>
+                                          Ulwaat Berries
+                                        </li>
+                                      </ul>
+                                    </td>
+                                  </tr>
+                                </table>                 
+                              </div>  
+                            </center>
+                            <div class = "row">
+                              <div class = "col-10"></div>
+                              <div class = "col-80">
+                                <button class = "button button-fill color-orange small link popup-close" href = "#">Return to List</button>
+                              </div>
+                              <div class = "col-10"></div>
+                              
+                            </div>
+        
+                        </div>
+                        <div class = "page-content popup popup-soup">
+                            <center>
+                                <div class="card-content card-content-padding">
+                                    <img src = "lib/img/menu/Golden_Tail_Soup.jpg" width= "70%"/><br/>
+                                    <h3>Golden Tail Soup</h3>
+                                    <p class="date">
+                                      <p>
+                                        A simple, yet delicate dish to start your meal.
+                                      </p>       
+                                  </div>
+                                  <div class="card-footer">
+                                    <table style = "width:100%">
+                                      <tr>
+                                        <td class = "floatCenter">Ingredients</td>
+                                        <td>
+                                          <ul>
+                                            <li>
+                                              Kujata Marrow
+                                            </li>
+                                            <li>
+                                              Platinum Myltrout Fillet
+                                            </li>
+                                            <li>
+                                              Allural Shallot
+                                            </li>
+                                          </ul>
+                                        </td>
+                                      </tr>
+                                    </table>                 
+                                  </div>  
+                                </center>
+                                <div class = "row">
+                                  <div class = "col-10"></div>
+                                  <div class = "col-80">
+                                    <button class = "button button-fill color-orange small link popup-close" href = "#">Return to List</button>
+                                  </div>
+                                  <div class = "col-10"></div>
+                                  
+                                </div>
+            
+                            </div>
+            
+                            <div class = "page-content popup popup-carpaccio">
+                                <center>
+                                    <div class="card-content card-content-padding">
+                                        <img src = "lib/img/menu/tide_grouper_carpaccio.jpg" width= "70%"/><br/>
+                                        <h3>Tide Grouper Carpaccio</h3>
+                                        <p class="date">
+                                          <p>
+                                            A simple, yet delicate dish to start your meal.
+                                          </p>       
+                                      </div>
+                                      <div class="card-footer">
+                                        <table style = "width:100%">
+                                          <tr>
+                                            <td class = "floatCenter">Ingredients</td>
+                                            <td>
+                                              <ul>
+                                                <li>
+                                                  Tide Grouper Fillet
+                                                </li>
+                                                <li>
+                                                  Aegir Root
+                                                </li>
+                                              </ul>
+                                            </td>
+                                          </tr>
+                                        </table>                 
+                                      </div>  
+                                    </center>
+                                    <div class = "row">
+                                      <div class = "col-10"></div>
+                                      <div class = "col-80">
+                                        <button class = "button button-fill color-orange small link popup-close" href = "#">Return to List</button>
+                                      </div>
+                                      <div class = "col-10"></div>
+                                      
+                                    </div>
+                
+                                </div>  
+
+                                <div class = "page-content popup popup-devilfin">
+                                    <center>
+                                        <div class="card-content card-content-padding">
+                                            <img src = "lib/img/menu/devilfin_soup.jpg" width= "70%"/><br/>
+                                            <h3>Devilfin Soup</h3>
+                                            <p class="date">
+                                              <p>
+                                                A simple, yet delicate dish to start your meal.
+                                              </p>       
+                                          </div>
+                                          <div class="card-footer">
+                                            <table style = "width:100%">
+                                              <tr>
+                                                <td class = "floatCenter">Ingredients</td>
+                                                <td>
+                                                  <ul>
+                                                    <li>
+                                                      Coraldevil Fin
+                                                    </li>
+                                                    <li>
+                                                      Kettier Ginger
+                                                    </li>
+                                                    <li>
+                                                      Leiden Pepper
+                                                    </li>
+                                                  </ul>
+                                                </td>
+                                              </tr>
+                                            </table>                 
+                                          </div>  
+                                        </center>
+                                        <div class = "row">
+                                          <div class = "col-10"></div>
+                                          <div class = "col-80">
+                                            <button class = "button button-fill color-orange small link popup-close" href = "#">Return to List</button>
+                                          </div>
+                                          <div class = "col-10"></div>
+                                          
+                                        </div>
+                    
+                                    </div>
+                    
+                                    <div class = "page-content popup popup-curry">
+                                        <center>
+                                            <div class="card-content card-content-padding">
+                                                <img src = "lib/img/menu/Sweet_Saltwater_Crustacean_Curry.jpg" width= "70%"/><br/>
+                                                <h3>Sweet Saltwater Crustacean Curry</h3>
+                                                <p class="date">
+                                                  <p>
+                                                    A simple, yet delicate dish to start your meal.
+                                                  </p>       
+                                              </div>
+                                              <div class="card-footer">
+                                                <table style = "width:100%">
+                                                  <tr>
+                                                    <td class = "floatCenter">Ingredients</td>
+                                                    <td>
+                                                      <ul>
+                                                        <li>
+                                                          Shieldshears Claw
+                                                        </li>
+                                                        <li>
+                                                          Cygillian Crab
+                                                        </li>
+                                                        <li>
+                                                          Sweet Pepper
+                                                        </li>
+                                                      </ul>
+                                                    </td>
+                                                  </tr>
+                                                </table>                 
+                                              </div>  
+                                            </center>
+                                            <div class = "row">
+                                              <div class = "col-10"></div>
+                                              <div class = "col-80">
+                                                <button class = "button button-fill color-orange small link popup-close" href = "#">Return to List</button>
+                                              </div>
+                                              <div class = "col-10"></div>
+                                              
+                                            </div>
+                                    </div>
+                        
+                                                 
+
           </div>
         </div>
       </div>
@@ -220,6 +843,6 @@
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="lib/Framework7/js/framework7.min.js"></script>
     <!-- Path to your app js-->
-    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
   </body>
 </html>

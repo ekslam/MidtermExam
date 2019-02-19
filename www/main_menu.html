@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>MENU</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/framework7-icons.css">
+
+    <style>
+      .backgroundimg {
+               /* To cover everything */
+              /*position: absolute; /*this is most important! */
+              max-height: 100%;
+              max-width: 100%;
+              background: url(lib/img/menu.png);
+              background-size: 100%;
+              background-repeat: no-repeat;
+      }
+
+
+      .fill img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .iconbutton {
+        height: 100%;
+        width: 100%;
+      }
+
+      .cardBack {
+        background-color: #2c2c2c;
+      }
+
+
+      .button{
+        position: absolute;
+        top: 80%;
+      }
+
+      .demo-swiper .swiper-slide {
+        font-size: 25px;
+        font-weight: 300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        color: #000;
+      }
+      .demo-swiper .swiper-slide {
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        background: #fff;
+      }
+      .demo-swiper {
+        margin: 0px 0 35px;
+        font-size: 18px;
+        height: 120px;
+      }
+      .demo-swiper.demo-swiper-auto .swiper-slide {
+        width: 85%;
+      }
+      .demo-swiper.demo-swiper-auto .swiper-slide:nth-child(2n) {
+        width: 70%;
+      }
+      .demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
+        width: 30%;
+      }
+    </style>
+
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+
+
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+
+          <!-- Top Navbar -->
+          <!-- <div class="navbar">
+            <div class="navbar-inner">
+              <div class="title">Debut</div>
+            </div>
+          </div> -->
+
+          <!-- Scrollable page content -->
+
+          <div style = "max-height: 100%; max-width: 100%; background: url(lib/img/menu.png); background-size: 100%; background-repeat: no-repeat;" class="page-content">
+                <div class="row center">
+                  <div class="col-25"></div>                        
+                  <a class="popup-open card cardBack col-50" href="#" data-popup=".popup-debutant">
+                      <div style = "background-color: #3f3c3c;" class="card-content card-content-padding center"><img style = "max-height: 100%;
+                        max-width: 100%;" src="lib/img/menu-debutant.png" class="iconbutton"></div>
+                  </a>
+                  <div class="col-25"></div>  
+                </div>
+                <div class="row center">
+                    <div class="col-25"></div>                        
+                    <a class="card col-50" href="/location/">
+                        <div style = "background-color: #3f3c3c;" class="card-content card-content-padding center"><img style = "max-height: 100%;
+                          max-width: 100%;" src="lib/img/menu-location.png" class="iconbutton"></div>
+                    </a>
+                    <div class="col-25"></div>  
+                </div>
+                <div class="row center">
+                    <div class="col-25"></div>                        
+                    <a class="popup-open card col-50" href="#" data-popup= ".popup-attire">
+                        <div style = "background-color: #3f3c3c;" class="card-content card-content-padding center"><img style = "max-height: 100%;
+                          max-width: 100%;" src="lib/img/menu-attire.png" class="iconbutton"></div>
+                    </a>
+                    <div class="col-25"></div>  
+                  </div>
+                  <div class="row center">
+                      <div class="col-25"></div>                        
+                      <a class="card col-50" href="/roses/">
+                          <div style = "background-color: #3f3c3c;" class="card-content card-content-padding center"><img style = "max-height: 100%;
+                            max-width: 100%;" src="lib/img/menu-entourage.png" class="iconbutton"></div>
+                      </a>
+                      <div class="col-25"></div>  
+                  </div>
+                  <div class="row center">
+                      <div class="col-25"></div>                        
+                      <a class="card col-50" href="/menu/">
+                          <div style = "background-color: #3f3c3c;" class="card-content card-content-padding center"><img style = "max-height: 100%;
+                            max-width: 100%;" src="lib/img/menu-food.png" class="iconbutton"></div>
+                      </a>
+                      <div class="col-25"></div>  
+                  </div>
+                  <div class="row center">
+                      <div class="col-25"></div>                        
+                      <a class="card col-50" href="/timeline/">
+                          <div style = "background-color: #3f3c3c;" class="card-content card-content-padding center"><img style = "max-height: 100%;
+                            max-width: 100%;" src="lib/img/Programme.png" class="iconbutton"></div>
+                      </a>
+                      <div class="col-25"></div>  
+                  </div>
+                  <div class="row center">
+                      <div class="col-25"></div>                        
+                      <a class="card col-50" href="/developers/">
+                          <div style = "background-color: #3f3c3c;" class="card-content card-content-padding center"><img style = "max-height: 100%;
+                            max-width: 100%;" src="lib/img/Developers.png" class="iconbutton"></div>
+                      </a>
+                      <div class="col-25"></div>  
+                  </div>
+                  
+
+                  <!-- DEBUTANT -->
+                  <div style = "background-color: #3f3c3c" class = "page-content popup popup-debutant">
+                      <center>
+                          <div class="card-content card-content-padding">
+                              <img src = "lib/img/DFFOO_Aerith.png" width= "70%"/><br/>
+                              <h2 style = "color: rgb(199, 145, 9)">Aerith Gainsborough</h2>
+                              <p class="date">
+                                <h3 style = "color: rgb(199, 145, 9)">Descendant of the Ancients</h3>
+                              </p>
+                               <b style = "color: rgb(199, 145, 9)">THE DEBUTANT</b><br/>
+                               <p style = "text-align:justify">
+                                <!-- Zack is one of the first few friends of Aerith. Above all else, Zack cared about Aerith, promising her that someday, he will bring her up to where she can see the blue skies. Even through the tough challenges he faced as a SOLDIER, Zack was able to overcome them with the thought of wanting to see Aerith. He formed a special bond with her, and became closer in just a short amount of time. -->
+                              </p>
+                              <div style = "position:relative" class="col 80">
+                                  <button class = "button button-fill color-orange small link popup-close" href = "#">Return to List</button>
+                            </div>
+                            </div>
+                            
+                            
+                          </center>
+                  </div>
+
+                  <!-- ATTIRE -->
+                  <div style = "background-color: #c0baba" class = "page-content popup popup-attire">
+                      <center>
+                          <div data-speed="500" data-pagination='{"el": ".swiper-pagination"}' data-space-between="50" class="swiper-container swiper-init demo-swiper">
+                              <div class="swiper-pagination"></div>
+                              <div style = "margin-bottom:100px"class="swiper-wrapper">
+                                <div class="swiper-slide"><img src = "lib/img/blackTux.png" width= "70%"/></div>
+                                <div class="swiper-slide"><img src = "lib/img/greyTux.png" width= "70%"/></div>
+                                <div class="swiper-slide"><img src = "lib/img/dress.png" width= "70%"/></div>
+                                <div class="swiper-slide"><img src = "lib/img/dress2.png" width= "70%"/></div>
+                                <div class="swiper-slide"><img src = "lib/img/greek.png" width= "70%"/><br/><h1>End</h1></div>
+                                <div class="swiper-slide"><a class = "popup-close" href = "#"><img style = "margin-top: 150px"src = "lib/img/backIcon.png" width= "30%"/></a></div>
+                              </div>
+                            </div>   
+                          </center>
+                  </div>
+               
+            </div>
+            
+            
+            <!-- Link to another page -->
+          </div>
+      </div>
+    </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>

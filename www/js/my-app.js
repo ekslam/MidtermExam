@@ -21,9 +21,9 @@ var app = new Framework7({
         url: 'm_menu.html',
       },
       {
-        name: 'bulalo',
-        path: '/bulalo/',
-        url: 'bulalo.html',
+        name: 'location',
+        path: '/location/',
+        url: 'location.html',
       },
       {
         name: 'roses',
@@ -39,7 +39,18 @@ var app = new Framework7({
         name: 'timeline',
         path: '/timeline',
         url: 'timeline.html',
-      }
+      },
+      {
+        name: 'main_menu',
+        path: '/main_menu/',
+        url: 'main_menu.html',
+      },
+      {
+        name: 'developers',
+        path: '/developers/',
+        url: 'developers.html',
+      },
+
       
     ],
     // ... other parameters
@@ -56,6 +67,21 @@ var app = new Framework7({
 
   var $$ = Dom7;
 
+  //----------------  DEBUTANT  ---------------//
+  $$('.popup-debutant').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-debutant').on('popup:opened', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //----------------  ATTIRE  ---------------//
+  $$('.popup-attire').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-attire').on('popup:opened', function (e, popup) {
+    console.log('Profile Page');
+  });
 
   //----------------  18 ROSES  ---------------//
   //Zack Fair
@@ -346,5 +372,151 @@ var app = new Framework7({
     console.log('Profile Page');
   });
   $$('.popup-deuce').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+
+  //----------------  18 TREASURES  ---------------//
+  //Sephiroth
+  $$('.popup-sephiroth').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-sephiroth').on('popup:opened', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Genesis Rhapsodos
+  $$('.popup-genesis').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-genesis').on('popup:opened', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Angeal Hewley
+  $$('.popup-angeal').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-angeal').on('popup:opened', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Barret Wallace
+  $$('.popup-barret').on('popup:open', function (e, popup){
+    console.log('Profile Page');
+  });
+  $$('.popup-barret').on('popup:opened', function(e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Auron
+  $$('.popup-auron').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-auron').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Seifer Almasy
+  $$('.popup-seifer').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-siefer').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Kuja
+  $$('.popup-kuja').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-kuja').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Kefka Palazzo
+  $$('.popup-kefka').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-kefka').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Regis Lucis Caelum
+  $$('.popup-regis').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-regis').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Ardyn Izunia
+  $$('.popup-ardyn').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-ardyn').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Kain Highwind
+  $$('.popup-kain').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-kain').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Gabranth
+  $$('.popup-gabranth').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-gabranth').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Golbez
+  $$('.popup-golbez').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-golbez').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Fang
+  $$('.popup-fang').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-fang').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Jecht
+  $$('.popup-jecht').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-jecht').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Rosa Joanna Farrell
+  $$('.popup-rosa').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-rosa').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //King
+  $$('.popup-king').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-king').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+
+  //Ultimicia
+  $$('.popup-ultimicia').on('popup:open', function (e, popup) {
+    console.log('Profile Page');
+  });
+  $$('.popup-ultimicia').on('popup:open', function (e, popup) {
     console.log('Profile Page');
   });

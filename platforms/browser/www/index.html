@@ -18,7 +18,7 @@
       .backgroundimg {
               height: 100%; /* To fill everything */
               max-width: 100%; /* To fill everything */
-              background: url(lib/img/Aerith3.png); /* Your Image */
+              background: url(lib/img/splash.png); /* Your Image */
               background-size: 100%; /* To cover everything */
               /*position: absolute; /*this is most important! */
               background-repeat: no-repeat;
@@ -38,6 +38,8 @@
         position: absolute;
         top: 80%;
       }
+
+
     </style>
 
   </head>
@@ -45,7 +47,7 @@
     <!-- App root element -->
     <div id="app">
       <!-- Statusbar overlay -->
-      <div class="statusbar-overlay"></div>
+      <div class="statusbar"></div>
 
 
 
@@ -65,17 +67,17 @@
 
               <div data-page="index" class="page page-on-center">
 
-                  <div class="toolbar toolbar-bottom-md fab-morph-target">
+                  <div class="toolbar toolbar-bottom-md color-orange fab-morph-target">
                       <div class="toolbar-inner">
                         <!-- Each Toolbar link will close FAB (morph back) on click -->
                         <a class="link fab-close"></a>
-                        <a class="link" href="/roses/">Accept Invitation</a>
+                        <a id = "flipbook" class="link" href="/main_menu/">Accept Invitation</a>
                         <a class="link fab-close"></a>
                       </div>
                     </div>
                   
                 
-                  <div class="fab fab-center-bottom fab-morph color-blue" data-morph-to=".toolbar">
+                  <div class="fab fab-center-bottom fab-morph color-orange" data-morph-to=".toolbar">
                       <a href="#">
                         <!-- Icons For iOS Theme -->
                         <i class="icon f7-icons ios-only"></i>
@@ -102,5 +104,12 @@
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript">
+      $("#flipbook").turn({
+		width: 400,
+		height: 300,
+		autoCenter: true
+	});
+    </script>
   </body>
 </html>

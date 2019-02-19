@@ -8,18 +8,27 @@
     <!-- Color theme for statusbar -->
     <meta name="theme-color" content="#2196f3">
     <!-- Your app title -->
-    <title>My App</title>
+    <title>DEBUT</title>
     <!-- Path to Framework7 Library CSS -->
     <link rel="stylesheet" href="lib/Framework7/css/framework7.min.css">
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/styles.css">
 
     <style>
-      .page-content{
+      /* .page-content{
         background-color: #f4eff4
-      }
+      } */
       .timeline-item-inner{
-        background-color: #edcedb
+        background-color: #383436
+        
+      }
+      .bckgroundMenu {
+        height: 100%; /* To fill everything */
+        max-width: 100%; /* To fill everything */
+        background: url(lib/img/back.jpg);
+        background-size: cover; /* To cover everything */
+              /*position: absolute; /*this is most important! */
+        background-repeat: no-repeat;
       }
     </style>
 
@@ -41,6 +50,17 @@
               <div class="title">Programme Plan</div>
             </div>
           </div>-->
+          <div style = "background-image: url('lib/img/back.jpg')" class="navbar">
+            <div class="navbar-inner" >
+            <div class="left">
+                    <a href = "index.html" class="link back">
+                            <i class="icon icon-back"></i>
+                            <span class="ios-only">Back</span>
+                    </a>
+            </div>
+            <div style ="color: rgb(189, 189, 189)" class = "title">Programme</div>
+            </div>
+          </div>
 
           <!-- Toolbar -->
           <!--<div class="toolbar">
@@ -50,117 +70,1391 @@
           </div>-->
 
           <!-- Scrollable page content -->
-          <div class="page-content">
+          <div style = "background-color: #383436" class="page-content bckgroundMenu">
 
-            <center><h3>Programme</h3></center>
+            
             <!-- Timeline -->
             <div class="timeline">
               <!-- Timeline item -->
               <div class="timeline-item">
-                <div class="timeline-item-time">5:30PM</div>
+                <div style ="color: rgb(189, 189, 189)" class="timeline-item-time">5:30PM</div>
                 <div class="timeline-item-divider"></div>
                 <div class="timeline-item-content">
-                  <div class="timeline-item-inner">Invocation</div>
+                  <div style ="color: darkgoldenrod" class="timeline-item-inner popup-open" data-popup = ".popup-invo">Invocation</div>
                 </div>
               </div>
               <!-- Timeline item -->
               <div class="timeline-item">
-                <div class="timeline-item-time">5:50PM</div>
+                <div style ="color: rgb(189, 189, 189)" class="timeline-item-time">5:50PM</div>
                 <div class="timeline-item-divider"></div>
                 <div class="timeline-item-content">
-                  <div class="timeline-item-inner">Welcome Remarks</div>
+                  <div style ="color: darkgoldenrod" class="timeline-item-inner popup-open" data-popup = ".popup-remarks">Welcome Remarks</div>
                 </div>
               </div>
               <!-- Timeline item -->
               <div class="timeline-item">
-                <div class="timeline-item-time">6:10PM</div>
+                <div style ="color: rgb(189, 189, 189)" class="timeline-item-time">6:10PM</div>
                 <div class="timeline-item-divider"></div>
                 <div class="timeline-item-content">
-                  <div class="timeline-item-inner">Father and Daughter Dance</div>
+                  <div style ="color: darkgoldenrod" class="timeline-item-inner popup-open" data-popup=".popup-fddance">Father and Daughter Dance</div>
                 </div>
               </div>
               <!-- Timeline item -->
               <div class="timeline-item">
-                <div class="timeline-item-time">6:25PM</div>
+                <div style ="color: rgb(189, 189, 189)" class="timeline-item-time">6:25PM</div>
                 <div class="timeline-item-divider"></div>
                 <div class="timeline-item-content">
-                  <div class="timeline-item-inner">Grand Cotillion Waltz Dance</div>
+                  <div style ="color: darkgoldenrod" class="timeline-item-inner popup-open" data-popup = ".popup-roses">18 Roses</div>
                 </div>
               </div>
               <!-- Timeline item -->
               <div class="timeline-item">
-                <div class="timeline-item-time">6:45PM</div>
+                <div style ="color: rgb(189, 189, 189)" class="timeline-item-time">6:45PM</div>
                 <div class="timeline-item-divider"></div>
                 <div class="timeline-item-content">
-                  <div class="timeline-item-inner">Dinner</div>
+                  <div style ="color: darkgoldenrod" class="timeline-item-inner popup-open" data-popup = ".popup-candle">18 Candles</div>
                 </div>
               </div>
               <!-- Timeline item -->
               <div class="timeline-item">
-                <div class="timeline-item-time">7:10PM</div>
+                <div style ="color: rgb(189, 189, 189)" class="timeline-item-time">7:00PM</div>
                 <div class="timeline-item-divider"></div>
                 <div class="timeline-item-content">
-                  <div class="timeline-item-inner">Audio-Visual Presentation of Debutante</div>
+                  <div style ="color: darkgoldenrod" class="timeline-item-inner popup-open" data-popup=".popup-bills">18 Blue Bills</div>
+                </div>
+              </div>
+              <!-- Timeline item -->
+              <div class = "timeline-item">
+                <div style ="color: rgb(189, 189, 189)" class = "timeline-item-time">7:20PM</div>
+                <div class = "timeline-item-divider"></div>
+                <div class = "timeline-item-content">
+                  <div style ="color: darkgoldenrod" class = "timeline-item-inner popup-open" data-popup=".popup-grand">Grand Cotillion Waltz Dance</div>
                 </div>
               </div>
               <!-- Timeline item -->
               <div class="timeline-item">
-                <div class="timeline-item-time">7:40PM</div>
+                <div style ="color: rgb(189, 189, 189)" class="timeline-item-time">7:30PM</div>
                 <div class="timeline-item-divider"></div>
                 <div class="timeline-item-content">
-                  <div class="timeline-item-inner">18 Roses Dance</div>
+                  <div style ="color: darkgoldenrod" class="timeline-item-inner popup-open" data-popup=".popup-dinner">Dinner</div>
                 </div>
               </div>
               <!-- Timeline item -->
               <div class="timeline-item">
-                <div class="timeline-item-time">8:00PM</div>
+                <div style ="color: rgb(189, 189, 189)" class="timeline-item-time">8:00PM</div>
                 <div class="timeline-item-divider"></div>
                 <div class="timeline-item-content">
-                  <div class="timeline-item-inner">18 Candles Presentation</div>
+                  <div style ="color: darkgoldenrod" class="timeline-item-inner popup-open" data-popup=".popup-avr">Audio-Visual Presentation of Debutante Life</div>
                 </div>
               </div>
               <!-- Timeline item -->
               <div class="timeline-item">
-                <div class="timeline-item-time">8:20PM</div>
+                <div style ="color: rgb(189, 189, 189)" class="timeline-item-time">8:20PM</div>
                 <div class="timeline-item-divider"></div>
                 <div class="timeline-item-content">
-                  <div class="timeline-item-inner">Blowing of Cake Candles</div>
+                  <div style ="color: darkgoldenrod" class="timeline-item-inner popup-open" data-popup=".popup-intermission">Intermission Number</div>
                 </div>
               </div>
               <!-- Timeline item -->
               <div class="timeline-item">
-                <div class="timeline-item-time">8:30PM</div>
+                <div style ="color: rgb(189, 189, 189)" class="timeline-item-time">8:30PM</div>
                 <div class="timeline-item-divider"></div>
                 <div class="timeline-item-content">
-                  <div class="timeline-item-inner">18 Treasures Presentation</div>
+                  <div style ="color: darkgoldenrod" class="timeline-item-inner popup-open" data-popup=".popup-intermission">Audio-Visual Presentation of the Debut</div>
                 </div>
               </div>
               <!-- Timeline item -->
               <div class="timeline-item">
-                <div class="timeline-item-time">8:50PM</div>
+                <div style ="color: rgb(189, 189, 189)" class="timeline-item-time">8:50PM</div>
                 <div class="timeline-item-divider"></div>
                 <div class="timeline-item-content">
-                  <div class="timeline-item-inner">Games</div>
+                  <div style ="color: darkgoldenrod" class="timeline-item-inner popup-open" data-popup=".popup-trivia">Trivia</div>
                 </div>
               </div>
               <!-- Timeline item -->
               <div class="timeline-item">
-                <div class="timeline-item-time">9:15PM</div>
+                <div style ="color: rgb(189, 189, 189)" class="timeline-item-time">9:15PM</div>
                 <div class="timeline-item-divider"></div>
                 <div class="timeline-item-content">
-                  <div class="timeline-item-inner">A Word From The Debutante</div>
+                  <div style ="color: darkgoldenrod" class="timeline-item-inner popup-open" data-popup=".popup-debt">A Word From The Debutante</div>
                 </div>
               </div>
               <!-- Timeline item -->
               <div class="timeline-item">
-                <div class="timeline-item-time">8:30PM</div>
+                <div style ="color: rgb(189, 189, 189)" class="timeline-item-time">9:30PM</div>
                 <div class="timeline-item-divider"></div>
                 <div class="timeline-item-content">
-                  <div class="timeline-item-inner">Time to Party!!</div>
+                  <div style ="color: darkgoldenrod" class="timeline-item-inner">Time to Party!!</div>
                 </div>
               </div>
 
             </div>
+
+            <!-- PopUp Area -->
+            <div class = "page-content popup popup-invo">
+                <center>
+                    <div class="card-content card-content-padding">
+                        <img src = "lib/img/luna.png" width= "70%"/><br/>
+                        <h3>Invocation</h3>
+                        <p class="date">
+                          <b>Lunafreya</b>
+                        </p>
+                         
+                      </div>
+                      <div class = "row">
+                          <div class = "col-10"></div>
+                          <div class = "col-80">
+                            <button class = "button button-fill color-orange small link popup-close" href = "#">Return to Program</button>
+                          </div>
+                          <div class = "col-10"></div>
+                          
+                        </div>
+                    </center>
+                </div>
+
+                <!-- Dinner -->
+                <div class = "page-content popup popup-dinner">
+                  <center>
+                    <h3>Dinner</h3>
+                  </center>
+                    <div class="list media-list inset">
+                        <ul>
+                          <li>
+                            <a href="#" class="item-link item-content">
+                              <div class="item-media"><img src="lib/img/menu/Scientia_Style_Sushi.jpg" width="44"/></div>
+                              <div class="item-inner">
+                                <div class="item-title-row">
+                                  <div class="item-title">Scientia Style Sushi</div>
+                                </div>
+                                <div class="item-subtitle">Appetizer</div>
+                              </div>
+                            </a>
+                          </li>
+          
+                          <li>
+                            <a href="#" class="popup-open item-link item-content" data-popup = ".popup-hearty">
+                              <div class="item-media"><img src="lib/img/menu/Hearty-Stir-Fry-Recipe-FFXV.png" width="44"/></div>
+                              <div class="item-inner">
+                                <div class="item-title-row">
+                                  <div class="item-title">Hearty Stir Fry</div>
+                                </div>
+                                <div class="item-subtitle">Main Course</div>
+                              </div>
+                            </a>
+                          </li>
+          
+                          <li>
+                            <a href="#" class="popup-open item-link item-content" data-popup = ".popup-salad">
+                              <div class="item-media"><img src="lib/img/menu/image.png" width="44"/></div>
+                              <div class="item-inner">
+                                <div class="item-title-row">
+                                  <div class="item-title">Keycatrich Salad</div>
+                                </div>
+                                <div class="item-subtitle">Appetizer</div>
+                              </div>
+                            </a>
+                          </li>
+          
+                          <li>
+                            <a href="#" class="popup-open item-link item-content" data-popup = ".popup-skewers">
+                              <div class="item-media"><img src="lib/img/menu/semur_skewers.png" width="44"/></div>
+                              <div class="item-inner">
+                                <div class="item-title-row">
+                                  <div class="item-title">Semur Skewers</div>
+                                </div>
+                                <div class="item-subtitle">Main Course</div>
+                              </div>
+                            </a>
+                          </li>
+          
+                          <li>
+                            <a href="#" class="popup-open item-link item-content" data-popup = ".popup-tart">
+                              <div class="item-media"><img src="lib/img/menu/Golden_Chocobo_Tart.jpg" width="44"/></div>
+                              <div class="item-inner">
+                                <div class="item-title-row">
+                                  <div class="item-title">Golden Chocobo Tart</div>
+                                </div>
+                                <div class="item-subtitle">Dessert</div>
+                              </div>
+                            </a>
+                          </li>
+          
+                          <li>
+                            <a href="#" class="popup-open item-link item-content" data-popup = ".popup-berry">
+                              <div class="item-media"><img src="lib/img/menu/Kupoberry_Cheesecake.png" width="44"/></div>
+                              <div class="item-inner">
+                                <div class="item-title-row">
+                                  <div class="item-title">Kupoberry Cheesecake</div>
+                                </div>
+                                <div class="item-subtitle">Dessert</div>
+                              </div>
+                            </a>
+                          </li>
+          
+                          <li>
+                            <a href="#" class="popup-open item-link item-content" data-popup = ".popup-peak">
+                              <div class="item-media"><img src="lib/img/menu/Longwythe_s_Peak.jpg" width="44"/></div>
+                              <div class="item-inner">
+                                <div class="item-title-row">
+                                  <div class="item-title">Longwythe's Peak</div>
+                                </div>
+                                <div class="item-subtitle">Main Course</div>
+                              </div>
+                            </a>
+                          </li>
+          
+                          <li>
+                            <a href="#" class="popup-open item-link item-content" data-popup = ".popup-gar">
+                              <div class="item-media"><img src="lib/img/menu/Oak-Smoked_Devil_Gar.jpg" width="44"/></div>
+                              <div class="item-inner">
+                                <div class="item-title-row">
+                                  <div class="item-title">Oak Smoked Devil Gar</div>
+                                </div>
+                                <div class="item-subtitle">Main course</div>
+                              </div>
+                            </a>
+                          </li>
+          
+                          <li>
+                            <a href="#" class="popup-open item-link item-content" data-popup = ".popup-stew">
+                              <div class="item-media"><img src="lib/img/menu/King_s_Stew.jpg" width="44"/></div>
+                              <div class="item-inner">
+                                <div class="item-title-row">
+                                  <div class="item-title">King's Stew</div>
+                                </div>
+                                <div class="item-subtitle">Main course</div>
+                              </div>
+                            </a>
+                          </li>
+          
+                          <li>
+                            <a href="#" class="popup-open item-link item-content" data-popup = ".popup-pastry">
+                              <div class="item-media"><img src="lib/img/menu/Memory_Lane_Pastry.jpg" width="44"/></div>
+                              <div class="item-inner">
+                                <div class="item-title-row">
+                                  <div class="item-title">Memory Lane Pastry</div>
+                                </div>
+                                <div class="item-subtitle">Dessert</div>
+                              </div>
+                            </a>
+                          </li>
+          
+                          <li>
+                            <a href="#" class="popup-open item-link item-content" data-popup = ".popup-soup">
+                              <div class="item-media"><img src="lib/img/menu/Golden_Tail_Soup.jpg" width="44"/></div>
+                              <div class="item-inner">
+                                <div class="item-title-row">
+                                  <div class="item-title">Golden Tail Soup</div>
+                                </div>
+                                <div class="item-subtitle">Soup</div>
+                              </div>
+                            </a>
+                          </li>
+          
+                          <li>
+                            <a href="#" class="popup-open item-link item-content" data-popup = ".popup-carpaccio">
+                              <div class="item-media"><img src="lib/img/menu/tide_grouper_carpaccio.jpg" width="44"/></div>
+                              <div class="item-inner">
+                                <div class="item-title-row">
+                                  <div class="item-title">Tide Grouper Carpaccio</div>
+                                </div>
+                                <div class="item-subtitle">Appetizer</div>
+                              </div>
+                            </a>
+                          </li>
+          
+                          <li>
+                            <a href="#" class="popup-open item-link item-content" data-popup = ".popup-devilfin">
+                              <div class="item-media"><img src="lib/img/menu/devilfin_soup.jpg" width="44"/></div>
+                              <div class="item-inner">
+                                <div class="item-title-row">
+                                  <div class="item-title">Devilfin Soup</div>
+                                </div>
+                                <div class="item-subtitle">Soup</div>
+                              </div>
+                            </a>
+                          </li>
+          
+                          <li>
+                            <a href="#" class="popup-open item-link item-content" data-popup = ".popup-curry">
+                              <div class="item-media"><img src="lib/img/menu/Sweet_Saltwater_Crustacean_Curry.jpg" width="44"/></div>
+                              <div class="item-inner">
+                                <div class="item-title-row">
+                                  <div class="item-title">Sweet Saltwater Crustacean Curry</div>
+                                </div>
+                                <div class="item-subtitle">Main course</div>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class = "card-footer">
+                      <div class = "row">
+                          <div class = "col-10"></div>
+                          <div class = "col-80">
+                            <button class = "button button-fill color-orange small link popup-close" href = "#">Return to Program</button>
+                          </div>
+                          <div class = "col-10"></div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+    
+
+                <!-- Opening Remarks -->
+                <div class = "page-content popup popup-remarks">
+                    <center>
+                        <div class="card-content card-content-padding">
+                            <img src = "lib/img/ignis.png" width= "70%"/><br/>
+                            <h3>Welcome Remarks</h3>
+                            <p class="date">
+                              <b>Ignis Scientia</b>
+                            </p>
+                             
+                          </div>
+                          <div class = "row">
+                              <div class = "col-10"></div>
+                              <div class = "col-80">
+                                <button class = "button button-fill color-orange small link popup-close" href = "#">Return to Program</button>
+                              </div>
+                              <div class = "col-10"></div>
+                              
+                            </div>
+                        </center>
+                    </div>
+
+                    <!-- Father and Daughter Dance -->
+                    <div class = "page-content popup popup-fddance">
+                        <center>
+                            <div class="card-content card-content-padding">
+                                <h3>Father and Daughter Dance</h3>
+                                <p class="date">
+                                  <div class = "row">
+                                    <div class = "col-50">
+                                      <img src = "https://vignette.wikia.nocookie.net/finalfantasy/images/e/e6/DFFOO_Aerith.png/revision/latest?cb=20180608194129" width= "50%"/><br/>
+                                      <b>Aerith</b>
+                                    </div>
+                                    <div class = "col-50">
+                                      <img src = "https://vignette.wikia.nocookie.net/finalfantasy/images/b/ba/DFF2015_Odin.png/revision/latest?cb=20170809173615" width = "50%"><br/>
+                                      <b>Odin</b>
+                                      <br/>
+                                  </div>
+                                </div>
+                                </p>
+                                 
+                              </div>
+                              <div class = "row">
+                                  <div class = "col-10"></div>
+                                  <div class = "col-80">
+                                    <button class = "button button-fill color-orange small link popup-close" href = "#">Return to Program</button>
+                                  </div>
+                                  <div class = "col-10"></div>
+                                  
+                                </div>
+                            </center>
+                        </div>
+                
+                <div class = "page-content popup popup-roses">
+                    <center>
+                        <div class="card-content card-content-padding">
+                            
+                            <h3>Roses</h3>
+                            <p class="date">
+                                <div class="list accordion-list">
+                                    <ul>
+                                      <li class = "accordion-item">
+                                        <a href="#" class="item-link item-content">
+                                          <div class="item-inner">
+                                            <div class="item-title-row">
+                                              <div class="item-title">Zack Fair</div>
+                                            </div>
+                                          </div>
+                                        </a>
+                                        <div class = "accordion-item-content">
+                                            <center>
+                                              <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/4/47/DFFOO_ZACK_02.PNG/revision/latest?cb=20190111020844" width="40%"/>
+                                            <div class ="item-subtitle">SOLDIER 1st Class</div>
+                                            <div class = "item-text">1st Rose</div>
+                                            </center>
+                                        </div>
+        
+                                      </li>
+                                      <li class = "accordion-item">
+                                        <a href="#" class="item-link item-content">
+                                          <div class="item-inner">
+                                            <div class="item-title-row">
+                                              <div class="item-title">Cloud Strife</div>
+                                            </div>
+                                          </div>
+                                        </a>
+                                        <div class = "accordion-item-content">
+                                          <center>
+                                              <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/a/af/DFFOO_Cloud_Strife.png/revision/latest?cb=20180218225248" width="40%"/>
+                                              <div class = "item-subtitle">SOLDIER 1st Class</div>
+                                              <div class = "item-text">2nd Rose</div>
+                                          </center>
+                                        </div>
+                                      </li>
+        
+                                      <li class = "accordion-item">
+                                        <a href="#" class="item-link item-content">
+                                          <div class="item-inner">
+                                            <div class="item-title-row">
+                                              <div class="item-title">Vincent Valentine</div>
+                                            </div>
+                                          </div>
+                                        </a>
+                                        <div class = "accordion-item-content">
+                                          <center>
+                                              <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/a/a1/DFFOO_Vincent_Valentine.png/revision/latest?cb=20190111030522" width="40%"/>
+                                              <div class = "item-subtitle">Former Turks / Host of Chaos</div>
+                                              <div class = "item-text">3rd Rose</div>
+                                          </center>
+                                        </div>
+                                      </li>
+        
+                                      <li class = "accordion-item">
+                                          <a href="#" class="item-link item-content">
+                                            <div class="item-inner">
+                                              <div class="item-title-row">
+                                                <div class="item-title">Noctis Lucis Caelum</div>
+                                              </div>
+                                            </div>
+                                          </a>
+                                          <div class = "accordion-item-content">
+                                            <center>
+                                                <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/3/3f/DFFOO_Noctis.png/revision/latest?cb=20190111025128" width="40%"/>
+                                                <div class = "item-subtitle">Prince of Lucis</div>
+                                                <div class = "item-text">4th Rose</div>
+                                            </center>
+                                          </div>
+                                        </li>
+        
+                                        <li class = "accordion-item">
+                                          <a href="#" class="item-link item-content">
+                                            <div class="item-inner">
+                                              <div class="item-title-row">
+                                                <div class="item-title">Squall Leonhart</div>
+                                              </div>
+                                            </div>
+                                          </a>
+                                          <div class = "accordion-item-content">
+                                            <center>
+                                                <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/b/b8/DFFOO_Squall.png/revision/latest?cb=20180218225838" width="40%"/>
+                                                <div class = "item-subtitle">The Lone Wolf</div>
+                                                <div class = "item-text">5th Rose</div>
+                                            </center>
+                                          </div>
+                                        </li>
+        
+                                        <li class = "accordion-item">
+                                          <a href="#" class="item-link item-content">
+                                            <div class="item-inner">
+                                              <div class="item-title-row">
+                                                <div class="item-title">Tidus</div>
+                                              </div>
+                                            </div>
+                                          </a>
+                                          <div class = "accordion-item-content">
+                                            <center>
+                                                <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/c/c9/DFFOO_Tidus.png/revision/latest?cb=20190111030204" width="40%"/>
+                                                <div class = "item-subtitle">Blitzball Superstar</div>
+                                                <div class = "item-text">6th Rose</div>
+                                            </center>
+                                          </div>
+                                        </li>
+        
+                                        <li class = "accordion-item">
+                                            <a href="#" class="item-link item-content">
+                                              <div class="item-inner">
+                                                <div class="item-title-row">
+                                                  <div class="item-title">Cid Highwind</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                            <div class = "accordion-item-content">
+                                              <center>
+                                                  <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/8/88/DFFOO_Cid_Highwind.png/revision/latest?cb=20190111022737" width="40%"/>
+                                                  <div class = "item-subtitle">Airship Engineer</div>
+                                                  <div class = "item-text">7th Rose</div>
+                                              </center>
+                                            </div>
+                                          </li>
+        
+                                          <li class = "accordion-item">
+                                            <a href="#" class="item-link item-content">
+                                              <div class="item-inner">
+                                                <div class="item-title-row">
+                                                  <div class="item-title">Zidane Tribal</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                            <div class = "accordion-item-content">
+                                              <center>
+                                                  <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/5/56/DFFOO_Zidane_Tribal.png/revision/latest?cb=20180218225430" width="40%"/>
+                                                  <div class = "item-subtitle">The Wandering Thief</div>
+                                                  <div class = "item-text">8th Rose</div>
+                                              </center>
+                                            </div>
+                                          </li>
+        
+                                          <li class = "accordion-item">
+                                            <a href="#" class="item-link item-content">
+                                              <div class="item-inner">
+                                                <div class="item-title-row">
+                                                  <div class="item-title">Zell Dincht</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                            <div class = "accordion-item-content">
+                                              <center>
+                                                  <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/f/fa/DFFOO_Zell.png/revision/latest?cb=20190111030646" width="40%"/>
+                                                  <div class = "item-subtitle">The Cheerful Fighter</div>
+                                                  <div class = "item-text">9th Rose</div>
+                                              </center>
+                                            </div>
+                                          </li>
+        
+                                          <li class = "accordion-item">
+                                              <a href="#" class="item-link item-content">
+                                                <div class="item-inner">
+                                                  <div class="item-title-row">
+                                                    <div class="item-title">Hope Estheim</div>
+                                                  </div>
+                                                </div>
+                                              </a>
+                                              <div class = "accordion-item-content">
+                                                <center>
+                                                    <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/6/63/DFFOO_Hope_Estheim.png/revision/latest?cb=20180218225624" width="40%"/>
+                                                    <div class = "item-subtitle">The New Hope</div>
+                                                    <div class = "item-text">10th Rose</div>
+                                                </center>
+                                              </div>
+                                            </li>
+        
+                                            <li class = "accordion-item">
+                                              <a href="#" class="item-link item-content">
+                                                <div class="item-inner">
+                                                  <div class="item-title-row">
+                                                    <div class="item-title">Balthier</div>
+                                                  </div>
+                                                </div>
+                                              </a>
+                                              <div class = "accordion-item-content">
+                                                <center>
+                                                    <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/8/84/DFFOO_Balthier.png/revision/latest?cb=20180423200409" width="40%"/>
+                                                    <div class = "item-subtitle">The Chill Gunslinger</div>
+                                                    <div class = "item-text">11th Rose</div>
+                                                </center>
+                                              </div>
+                                            </li>
+        
+                                            <li class = "accordion-item">
+                                              <a href="#" class="item-link item-content">
+                                                <div class="item-inner">
+                                                  <div class="item-title-row">
+                                                    <div class="item-title">Cecil Harvey</div>
+                                                  </div>
+                                                </div>
+                                              </a>
+                                              <div class = "accordion-item-content">
+                                                <center>
+                                                    <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/3/3c/DFFOO_Cecil_Dark_Knight.png/revision/latest?cb=20180218224823" width="40%"/>
+                                                    <div class = "item-subtitle">Twin Soul of Light and Dark</div>
+                                                    <div class = "item-text">12th Rose</div>
+                                                </center>
+                                              </div>
+                                            </li>
+        
+                                            <li class = "accordion-item">
+                                                <a href="#" class="item-link item-content">
+                                                  <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                      <div class="item-title">Ace</div>
+                                                    </div>
+                                                  </div>
+                                                </a>
+                                                <div class = "accordion-item-content">
+                                                  <center>
+                                                      <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/a/ad/DFFOO_Ace.png/revision/latest?cb=20190111015935" width="40%"/>
+                                                      <div class = "item-subtitle">Leader of Class 0</div>
+                                                      <div class = "item-text">13th Rose</div>
+                                                  </center>
+                                                </div>
+                                              </li>
+        
+                                              <li class = "accordion-item">
+                                                <a href="#" class="item-link item-content">
+                                                  <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                      <div class="item-title">Noel Kreiss</div>
+                                                    </div>
+                                                  </div>
+                                                </a>
+                                                <div class = "accordion-item-content">
+                                                  <center>
+                                                      <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/7/72/DFFOO_Noel.png/revision/latest?cb=20190117125451" width="40%"/>
+                                                      <div class = "item-subtitle">Guardian of Time</div>
+                                                      <div class = "item-text">14th Rose</div>
+                                                  </center>
+                                                </div>
+                                              </li>
+        
+                                              <li class = "accordion-item">
+                                                <a href="#" class="item-link item-content">
+                                                  <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                      <div class="item-title">Snow Villiers</div>
+                                                    </div>
+                                                  </div>
+                                                </a>
+                                                <div class = "accordion-item-content">
+                                                  <center>
+                                                      <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/3/33/DFFOO_Snow.png/revision/latest?cb=20180608210433" width="40%"/>
+                                                      <div class = "item-subtitle">The Cold Hero</div>
+                                                      <div class = "item-text">15th Rose</div>
+                                                  </center>
+                                                </div>
+                                              </li>
+        
+                                              <li class = "accordion-item">
+                                                  <a href="#" class="item-link item-content">
+                                                    <div class="item-inner">
+                                                      <div class="item-title-row">
+                                                        <div class="item-title">Ignis Scientia</div>
+                                                      </div>
+                                                    </div>
+                                                  </a>
+                                                  <div class = "accordion-item-content">
+                                                    <center>
+                                                        <img class = "zoomImg" src="lib/img/ignis.png" width="40%"/>
+                                                        <div class = "item-subtitle">Prince's Advisor</div>
+                                                        <div class = "item-text">16th Rose</div>
+                                                    </center>
+                                                  </div>
+                                                </li>
+                                                
+                                                <li class = "accordion-item">
+                                                  <a href="#" class="item-link item-content">
+                                                    <div class="item-inner">
+                                                      <div class="item-title-row">
+                                                        <div class="item-title">Gladioulus Amicitia</div>
+                                                      </div>
+                                                    </div>
+                                                  </a>
+                                                  <div class = "accordion-item-content">
+                                                    <center>
+                                                        <img src="lib/img/gladio.png" width="40%"/>
+                                                        <div class = "item-subtitle">The Shield of Lucis</div>
+                                                        <div class = "item-text">17th Rose</div>
+                                                    </center>
+                                                  </div>
+                                                </li>
+        
+                                                <li class = "accordion-item">
+                                                  <a href="#" class="item-link item-content">
+                                                    <div class="item-inner">
+                                                      <div class="item-title-row">
+                                                        <div class="item-title">Prompto Argentum</div>
+                                                      </div>
+                                                    </div>
+                                                  </a>
+                                                  <div class = "accordion-item-content">
+                                                    <center>
+                                                        <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/1/16/DFFOO_Prompto.png/revision/latest?cb=20190111025641" width="40%"/>
+                                                        <div class = "item-subtitle">Lucis' Photographer</div>
+                                                        <div class = "item-text">18th Rose</div>
+                                                    </center>
+                                                  </div>
+                                                </li>
+                                    </ul>
+                                  </div>
+                            </p>
+                              
+                          </div>
+                          <div class = "card-footer">
+                          <div class = "row">
+                              <div class = "col-10"></div>
+                              <div class = "col-80">
+                                <button class = "button button-fill color-orange small link popup-close" href = "#">Return to Program</button>
+                              </div>
+                              <div class = "col-10"></div>
+                              
+                            </div>
+                        </center>
+                      </div>
+                    </div>
+
+
+                    <div class = "page-content popup popup-candle">
+                        <center>
+                            <div class="card-content card-content-padding">
+                                
+                                <h3>Roses</h3>
+                                <p class="date">
+                                    <div class="list accordion-list">
+                                        <ul>
+                                          <li class = "accordion-item">
+                                            <a href="#" class="item-link item-content">
+                                              <div class="item-inner">
+                                                <div class="item-title-row">
+                                                  <div class="item-title">Tifa Lockhart</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                            <div class = "accordion-item-content">
+                                                <center>
+                                                  <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/6/67/DFFOO_Tifa.png/revision/latest?cb=20180218225234" width="40%"/>
+                                                  <div class = "item-subtitle">Fighter of Nibleheim</div>
+                                                  <div class = "item-text">1st Candle</div>
+                                                  </center>
+                                            </div>
+                                          </li>
+            
+                                          <li class = "accordion-item">
+                                            <a href="#" class="item-link item-content">
+                                              <div class="item-inner">
+                                                <div class="item-title-row">
+                                                  <div class="item-title">Yuffie Kisaragi</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                            <div class = "accordion-item-content">
+                                              <center>
+                                                  <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/0/0d/DFFOO_Yuffie_Kisaragi.png/revision/latest?cb=20180218225301" width="40%"/>
+                                                  <div class = "item-subtitle">Ninja Princess of Wutai</div>
+                                                  <div class = "item-text">2nd Candle</div>
+                                              </center>
+                                            </div>
+                                          </li>
+            
+                                          <li class = "accordion-item">
+                                            <a href="#" class="item-link item-content">
+                                              <div class="item-inner">
+                                                <div class="item-title-row">
+                                                  <div class="item-title">Lunafreya Nox Fleuret</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                            <div class = "accordion-item-content">
+                                              <center>
+                                                  <img src="lib/img/luna.png" width="40%"/>
+                                                  <div class = "item-subtitle">Oracle of Tenebrae</div>
+                                                  <div class = "item-text">3rd Candle</div>
+                                              </center>
+                                            </div>
+                                          </li>
+            
+                                          <li class = "accordion-item">
+                                              <a href="#" class="item-link item-content">
+                                                <div class="item-inner">
+                                                  <div class="item-title-row">
+                                                    <div class="item-title">Iris Amicitia</div>
+                                                  </div>
+                                                </div>
+                                              </a>
+                                              <div class = "accordion-item-content">
+                                                <center>
+                                                    <img src="lib/img/iris.png" width="40%"/>
+                                                    <div class = "item-subtitle">Gladio's Sister</div>
+                                                    <div class = "item-text">4th Candle</div>
+                                                </center>
+                                              </div>
+                                            </li>
+            
+                                            <li class = "accordion-item">
+                                              <a href="#" class="item-link item-content">
+                                                <div class="item-inner">
+                                                  <div class="item-title-row">
+                                                    <div class="item-title">Yuna</div>
+                                                  </div>
+                                                </div>
+                                              </a>
+                                              <div class = "accordion-item-content">
+                                                <center>
+                                                    <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/2/2c/DFOO_YUNA_2.PNG/revision/latest?cb=20180925214559" width="40%"/>
+                                                    <div class = "item-subtitle">Summoner of Spira</div>
+                                                    <div class = "item-text">5th Candle</div>
+                                                </center>
+                                              </div>
+                                            </li>
+            
+                                            <li class = "accordion-item">
+                                              <a href="#" class="item-link item-content">
+                                                <div class="item-inner">
+                                                  <div class="item-title-row">
+                                                    <div class="item-title">Claire "Lightning" Farron</div>
+                                                  </div>
+                                                </div>
+                                              </a>
+                                              <div class = "accordion-item-content">
+                                                <center>
+                                                    <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/e/e4/DFFOO_Lightning_02.png/revision/latest?cb=20180626182502" width="40%"/>
+                                                    <div class = "item-subtitle">Knight of Etro</div>
+                                                    <div class = "item-text">6th Candle</div>
+                                                </center>
+                                              </div>
+                                            </li>
+            
+                                            <li class = "accordion-item">
+                                                <a href="#" class="item-link item-content">
+                                                  <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                      <div class="item-title">Terra Branford</div>
+                                                    </div>
+                                                                                       
+                                                  </div>
+                                                </a>
+                                                <div class = "accordion-item-content">
+                                                  <center>
+                                                      <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/1/19/DFFOO_Terra_Branford.png/revision/latest?cb=20180218225047" width="40%"/>
+                                                      <div class = "item-subtitle">High Destructo Mage</div>
+                                                      <div class = "item-text">7th Candle</div>   
+                                                  </center>
+                                                </div>
+                                              </li>
+            
+                                              <li class = "accordion-item">
+                                                <a href="#" class="item-link item-content">
+                                                  <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                      <div class="item-title">Rinoa Heartilly</div>
+                                                    </div>
+                                                  </div>
+                                                </a>
+                                                <div class = "accordion-item-content">
+                                                  <center>
+                                                      <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/1/19/DFFOO_Rinoa.png/revision/latest?cb=20190117125017" width="40%"/>
+                                                      <div class = "item-subtitle">The Forest Owl</div>
+                                                      <div class = "item-text">8th Candle</div>
+                                                  </center>
+                                                </div>
+                                              </li>
+            
+                                              <li class = "accordion-item">
+                                                <a href="#" class="item-link item-content">
+                                                  <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                      <div class="item-title">Oerba dia Vanille</div>
+                                                    </div>  
+                                                  </div>
+                                                </a>
+                                                <div class = "accordion-item-content">
+                                                  <center>
+                                                      <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/0/02/DFFOO_Vanille.png/revision/latest?cb=20180218225901" width="40%"/>
+                                                      <div class = "item-subtitle">L'Cie of Oerba</div>
+                                                      <div class = "item-text">9th Candle</div>
+                                                  </center>
+                                                </div>
+                                              </li>
+            
+                                              <li class = "accordion-item">
+                                                  <a href="#" class="item-link item-content">
+                                                    <div class="item-inner">
+                                                      <div class="item-title-row">
+                                                        <div class="item-title">Serah Farron</div>
+                                                      </div>
+                                                    </div>
+                                                  </a>
+                                                  <div class = "accordion-item-content">
+                                                    <center>
+                                                        <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/b/b6/PFF_Serah_Illust.png/revision/latest?cb=20141031220727" width="40%"/>
+                                                        <div class = "item-subtitle">Oracle of Neul</div>
+                                                        <div class = "item-text">10th Candle</div>
+                                                    </center>
+                                                  </div>
+                                                </li>
+            
+                                                <li class = "accordion-item">
+                                                  <a href="#" class="item-link item-content">
+                                                    <div class="item-inner">
+                                                      <div class="item-title-row">
+                                                        <div class="item-title">Rikku</div>
+                                                      </div>
+                                                    </div>
+                                                  </a>
+                                                  <div class = "accordion-item-content">
+                                                    <center>
+                                                        <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/a/ad/PFF_FFX-2_Rikku_Illust.png/revision/latest?cb=20141031221328" width="40%"/>
+                                                        <div class = "item-subtitle">A Thief Gone Good</div>
+                                                        <div class = "item-text">11th Candle</div>
+                                                    </center>
+                                                  </div>
+                                                </li>
+            
+                                                <li class = "accordion-item">
+                                                  <a href="#" class="item-link item-content">
+                                                    <div class="item-inner">
+                                                      <div class="item-title-row">
+                                                        <div class="item-title">Rydia of Mist</div>
+                                                      </div>
+                                                    </div>
+                                                  </a>
+                                                  <div class = "accordion-item-content">
+                                                    <center>
+                                                        <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/8/8c/DFFOO_Rydia.png/revision/latest?cb=20180608215136" width="40%"/>
+                                                        <div class = "item-subtitle">Summoner of Mist</div>
+                                                        <div class = "item-text">12th Candle</div>
+                                                    </center>
+                                                  </div>
+                                                </li>
+            
+                                                <li class = "accordion-item">
+                                                    <a href="#" class="item-link item-content">
+                                                      <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                          <div class="item-title">Penelo</div>
+                                                        </div>
+                                                      </div>
+                                                    </a>
+                                                    <div class = "accordion-item-content">
+                                                      <center>
+                                                          <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/7/72/DFFOO_Penelo.png/revision/latest?cb=20180218225559" width="40%"/>
+                                                          <div class = "item-subtitle">Vaan's "Little" Sister</div>
+                                                          <div class = "item-text">13th Candle</div>
+                                                      </center>
+                                                    </div>
+                                                  </li>
+            
+                                                  <li class = "accordion-item">
+                                                    <a href="#" class="item-link item-content">
+                                                      <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                          <div class="item-title">Y'shtola Rhul</div>
+                                                        </div>
+                                                      </div>
+                                                    </a>
+                                                    <div class = "accordion-item-content">
+                                                      <center>
+                                                          <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/a/af/DFFOO_Y%27shtola.png/revision/latest?cb=20180218225636" width="40%"/>
+                                                          <div class = "item-subtitle">Guardian of the 14th Realm</div>
+                                                          <div class = "item-text">14th Candle</div>
+                                                      </center>
+                                                    </div>
+                                                  </li>
+            
+                                                  <li class = "accordion-item">
+                                                    <a href="#" class="item-link item-content">
+                                                      <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                          <div class="item-title">Selphie Tilmitt</div>
+                                                        </div>
+                                                      </div>
+                                                    </a>
+                                                    <div class = "accordion-item-content">
+                                                      <center>
+                                                          <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/c/c3/DFFOO_Selphie.png/revision/latest?cb=20190117130644" width="40%"/>
+                                                          <div class = "item-subtitle">Cheerful Whipper</div>
+                                                          <div class = "item-text">15th Candle</div>
+                                                      </center>
+                                                    </div>
+                                                  </li>
+            
+                                                  <li class = "accordion-item">
+                                                      <a href="#" class="item-link item-content">
+                                                        <div class="item-inner">
+                                                          <div class="item-title-row">
+                                                            <div class="item-title">Rem Tokimiya</div>
+                                                          </div>
+                                                        </div>
+                                                      </a>
+                                                      <div class = "accordion-item-content">
+                                                        <center>
+                                                            <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/6/6c/DFFOO_Rem_Tokimiya.png/revision/latest?cb=20180218225701" width="40%"/>
+                                                            <div class = "item-subtitle">Class 0 Cadet</div>
+                                                            <div class = "item-text">16th Candle</div>
+                                                        </center>
+                                                      </div>
+                                                    </li>
+            
+                                                    <li class = "accordion-item">
+                                                      <a href="#" class="item-link item-content">
+                                                        <div class="item-inner">
+                                                          <div class="item-title-row">
+                                                            <div class="item-title">Ashelia B'nargin Dalmasca</div>
+                                                          </div>   
+                                                        </div>
+                                                      </a>
+                                                      <div class = "accordion-item-content">
+                                                        <center>
+                                                            <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/9/92/DFFOO_Ashe.png/revision/latest?cb=20180608201336" width="40%"/>
+                                                            <div class = "item-subtitle">Princess of Dalmasca</div>
+                                                            <div class = "item-text">17th Candle</div>
+                                                        </center>
+                                                      </div>
+                                                    </li>
+            
+                                                    <li class = "accordion-item">
+                                                      <a href="#" class="item-link item-content">
+                                                        <div class="item-inner">
+                                                          <div class="item-title-row">
+                                                            <div class="item-title">Deuce</div>
+                                                          </div>
+                                                        </div>
+                                                      </a>
+                                                      <div class = "accordion-item-content">
+                                                        <center>
+                                                            <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/0/0f/DFFOO_Deuce.png/revision/latest?cb=20190117130025" width="40%"/>
+                                                            <div class = "item-subtitle">Class 0 Number "2"</div>
+                                                            <div class = "item-text">18th Candle</div>
+                                                        </center>
+                                                      </div>
+                                                    </li>
+                                        </ul>
+                                      </div>
+                                </p>
+                                  
+                              </div>
+                              <div class = "card-footer">
+                              <div class = "row">
+                                  <div class = "col-10"></div>
+                                  <div class = "col-80">
+                                    <button class = "button button-fill color-orange small link popup-close" href = "#">Return to Program</button>
+                                  </div>
+                                  <div class = "col-10"></div>
+                                  
+                                </div>
+                            </center>
+                          </div>
+                        </div>
+
+                        
+                        <div class = "page-content popup popup-bills">
+                            <center>
+                                <div class="card-content card-content-padding">
+                                    
+                                    <h3>Blue Bills</h3>
+                                    <p class="date">
+                                        <div class="list accordion-list">
+                            <ul>
+                              <li class = "accordion-item">
+                                <a href="#" class="item-link item-content">
+                                  <div class="item-inner">
+                                    <div class="item-title-row">
+                                      <div class="item-title">Sephiroth</div>
+                                    </div>
+                                  </div>
+                                </a>
+                                <div class = "accordion-item-content">
+                                  <center>
+                                      <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/3/3d/DFFOO_Sephiroth.png/revision/latest?cb=20190111030120" width="40%"/>
+                                      <div class = "item-subtitle">One-Winged Angel</div>
+                                      <div class = "item-text">1st Treasure</div>
+                                  </center>
+                                </div>
+                              </li>
+
+                              <li class = "accordion-item">
+                                <a href="#" class="item-link item-content">
+                                  <div class="item-inner">
+                                    <div class="item-title-row">
+                                      <div class="item-title">Genesis Rhapsodos</div>
+                                    </div>
+                                  </div>
+                                </a>
+                                <div class = "accordion-item-content">
+                                  <center>
+                                      <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/0/0b/PFF_Genesis_Illust.png/revision/latest?cb=20151113230120" width="40%"/>
+                                      <div class = "item-subtitle">LOVELESS Requiem</div>
+                                      <div class = "item-text">2nd Treasure</div>
+                                  </center>
+                                </div>
+                              </li>
+
+                              <li class = "accordion-item">
+                                <a href="#" class="item-link item-content">
+                                  <div class="item-inner">
+                                    <div class="item-title-row">
+                                      <div class="item-title">Angeal Hewley</div>
+                                    </div>
+                                  </div>
+                                </a>
+                                <div class = "accordion-item-content">
+                                  <center>
+                                      <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/2/29/PFF_Angeal_Illust.png/revision/latest?cb=20151113230119" width="40%"/>
+                                      <div class = "item-subtitle">The Man who Protects his Honor</div>
+                                      <div class = "item-text">3rd Treasure</div>
+                                  </center>
+                                </div>
+                              </li>
+
+                              <li class = "accordion-item">
+                                  <a href="#" class="item-link item-content">
+                                    <div class="item-inner">
+                                      <div class="item-title-row">
+                                        <div class="item-title">Barret Wallace</div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <div class ="accordion-item-content">
+                                    <center>
+                                        <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/b/b9/DFFOO_Barret.png/revision/latest?cb=20190111022426" width="40%"/>
+                                        <div class = "item-subtitle">One-Man Army</div>
+                                        <div class = "item-text">4th Treasure</div>
+                                    </center>
+                                  </div>
+                                </li>
+
+                                <li class = "accordion-item">
+                                  <a href="#" class="item-link item-content">
+                                    <div class="item-inner">
+                                      <div class="item-title-row">
+                                        <div class="item-title">Auron</div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <div class = "accordion-item-content">
+                                    <center>
+                                        <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/b/bb/DFFOO_Auron.png/revision/latest?cb=20190111021338" width="40%"/>
+                                        <div class = "item-subtitle">Guardian of Summoner</div>
+                                        <div class = "item-text">5th Treasure</div>
+                                    </center>
+                                  </div>
+                                </li>
+
+                                <li class = "accordion-item">
+                                  <a href="#" class="item-link item-content">
+                                    <div class="item-inner">
+                                      <div class="item-title-row">
+                                        <div class="item-title">Kuja</div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <div class = "accordion-item-content">
+                                    <center>
+                                        <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/4/4b/DFFOO_Kuja.png/revision/latest?cb=201901110217302" width="40%"/>
+                                        <div class = "item-subtitle">The Silver Sorcerer</div>
+                                        <div class = "item-text">6th Treasure</div>
+                                    </center>
+                                  </div>
+                                </li>
+
+                                <li class = "accordion-item">
+                                    <a href="#" class="item-link item-content">
+                                      <div class="item-inner">
+                                        <div class="item-title-row">
+                                          <div class="item-title">Seifer Almasy</div>
+                                        </div>                                      
+                                      </div>
+                                    </a>
+                                    <div class = "accordion-item-content">
+                                      <center>
+                                          <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/7/7f/DFFOO_Seifer_Almasy.png/revision/latest?cb=20160827145138" width="40%"/>
+                                          <div class = "item-subtitle">Mirrored Gunblade User</div>
+                                          <div class = "item-text">7th Treasure</div>
+                                      </center>
+                                    </div>
+                                  </li>
+
+                                  <li class = "accordion-item">
+                                    <a href="#" class="item-link item-content">
+                                      <div class="item-inner">
+                                        <div class="item-title-row">
+                                          <div class="item-title">Kefka Palazzo</div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                    <div class = "accordion-item-content">
+                                      <center>
+                                        <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/f/f2/DFFOO_Kefka_Palazzo.png/revision/latest?cb=20190111024228" width="40%"/>
+                                        <div class = "item-subtitle">The Mad Clown Sorcerer</div>
+                                        <div class = "item-text">8th Treasure</div>
+                                      </center>
+                                    </div>
+                                  </li>
+
+                                  <li class = "accordion-item">
+                                    <a href="#" class="item-link item-content">
+                                      <div class="item-inner">
+                                        <div class="item-title-row">
+                                          <div class="item-title">Regis Lucis Caelum</div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                    <div class = "accordion-item-content">
+                                      <center>
+                                        <img src="lib/img/regis.png" width="40%"/>
+                                        <div class = "item-subtitle">King of Lucis</div>
+                                        <div class = "item-text">9th Treasure</div>
+                                      </center>
+                                    </div>
+                                  </li>
+
+                                  <li class = "accordion-item">
+                                      <a href="#" class="item-link item-content">
+                                        <div class="item-inner">
+                                          <div class="item-title-row">
+                                            <div class="item-title">Ardyn Lucis Caelum</div>
+                                        </div>
+                                        </div>
+                                      </a>
+                                      <div class = "accordion-item-content">
+                                        <center>
+                                          <img src="lib/img/ardyn.png" width="40%"/>
+                                          <div class = "item-subtitle">The False Savior</div>
+                                          <div class = "item-text">10th Treasure</div>
+                                        </center>
+                                      </div>
+                                    </li>
+
+                                    <li class = "accordion-item">
+                                      <a href="#" class="item-link item-content">
+                                        <div class="item-inner">
+                                          <div class="item-title-row">
+                                            <div class="item-title">Kain Highwind</div>
+                                          </div>
+                                        </div>
+                                      </a>
+                                      <div class = "accordion-item-content">
+                                        <center>
+                                          <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/8/8b/DFFOO_Kain.png/revision/latest?cb=20190111024215" width="40%"/>
+                                          <div class = "item-subtitle">Dragoon of the Red Baron</div>
+                                          <div class = "item-text">11th Treasure</div>
+                                        </center>
+                                      </div>
+                                    </li>
+
+                                    <li class = "accordion-item"> 
+                                      <a href="#" class="item-link item-content">
+                                        <div class="item-inner">
+                                          <div class="item-title-row">
+                                            <div class="item-title">Gabranth</div>
+                                          </div>
+                                        </div>
+                                      </a>
+                                      <div class ="accordion-item-content">
+                                        <center>
+                                          <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/2/22/PFF_Gabranth_Illust.png/revision/latest?cb=20141031223816" width="40%"/>
+                                          <div class = "item-subtitle">Judge Executioner</div>
+                                          <div class = "item-text">12th Treasure</div>
+                                        </center>
+                                      </div>
+                                    </li>
+
+                                    <li class = "accordion-item">
+                                        <a href="#" class="item-link item-content">
+                                          <div class="item-inner">
+                                            <div class="item-title-row">
+                                              <div class="item-title">Golbez</div>
+                                            </div>
+                                          </div>
+                                        </a>
+                                        <div class = "accordion-item-content">
+                                          <center>
+                                            <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/c/c0/Dffoo_golbez.png/revision/latest?cb=20190111030851" width="40%"/>
+                                            <div class = "item-subtitle">The Dark Sorcerer</div>
+                                            <div class = "item-text">13th Treasure</div>
+                                          </center>
+                                        </div>
+                                      </li>
+
+                                      <li class = "accordion-item">
+                                        <a href="#" class="item-link item-content">
+                                          <div class="item-inner">
+                                            <div class="item-title-row">
+                                              <div class="item-title">Oerba Yun Fang</div>
+                                            </div>
+                                          </div>
+                                        </a>
+                                        <div class = "accordion-item-content">
+                                          <center>
+                                            <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/5/52/DFFOO_Fang.png/revision/latest?cb=20190111021111" width="40%"/>
+                                            <div class = "item-subtitle">Lancer of the Yun Clan</div>
+                                            <div class = "item-text">14th Treasure</div>
+                                          </center>
+                                        </div>
+                                      </li>
+
+                                      <li class = "accordion-item">
+                                        <a href="#" class="item-link item-content">
+                                          <div class="item-inner">
+                                            <div class="item-title-row">
+                                              <div class="item-title">Jecht</div>
+                                            </div>
+                                          </div>
+                                        </a>
+                                        <div class = "accordion-item-content">
+                                          <center>
+                                            <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/b/b9/DFFOO_Jecht.png/revision/latest?cb=20190111024203" width="40%"/>
+                                            <div class = "item-subtitle">Former Guardian of Spira</div>
+                                            <div class = "item-text">15th Treasure</div>
+                                          </center>
+                                        </div>
+                                      </li>
+
+                                      <li class = "accordion-item">
+                                          <a href="#" class="item-link item-content">
+                                            <div class="item-inner">
+                                              <div class="item-title-row">
+                                                <div class="item-title">Rosa Joanna Farrell</div>
+                                              </div>
+                                            </div>
+                                          </a>
+                                          <div class = "accordion-item-content">
+                                            <center>
+                                              <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/1/19/DFFOO_Rosa.png/revision/latest?cb=20181003010005" width="40%"/>
+                                              <div class = "item-subtitle">The White Mage</div>
+                                              <div class = "item-text">16th Treasure</div>
+                                            </center>
+                                          </div>
+                                        </li>
+
+                                        <li class = "accordion-item">
+                                          <a href="#" class="item-link item-content"> 
+                                            <div class="item-inner">
+                                              <div class="item-title-row">
+                                                <div class="item-title">King</div>
+                                              </div>
+                                            </div>
+                                          </a>
+                                          <div class = "accordion-item-content">
+                                            <center>
+                                              <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/e/ee/DFFOO_King.png/revision/latest?cb=20180218225715" width="40%"/>
+                                              <div class = "item-subtitle">Class 0 "King"</div>
+                                              <div class = "item-text">17th Treasure</div>
+                                            </center>
+                                          </div>
+                                        </li>
+
+                                        <li class = "accordion-item">
+                                          <a href="#" class="item-link item-content">
+                                            <div class="item-inner">
+                                              <div class="item-title-row">
+                                                <div class="item-title">Ultimicia</div>
+                                              </div>
+                                            </div>
+                                          </a>
+                                          <div class = "accordion-item-content">
+                                            <center>
+                                              <img src="https://vignette.wikia.nocookie.net/finalfantasy/images/9/95/DFFOO_Ultimecia.png/revision/latest?cb=20190203153451" width="40%"/>
+                                              <div class = "item-subtitle">Dark Sorceress</div>
+                                              <div class = "item-text">18th Treasure</div>
+                                            </center>
+                                          </div>
+                                        </li>
+                                        
+                            </ul>
+                          </div>
+                                    </p>
+                                      
+                                  </div>
+                                  <div class = "card-footer">
+                                  <div class = "row">
+                                      <div class = "col-10"></div>
+                                      <div class = "col-80">
+                                        <button class = "button button-fill color-orange small link popup-close" href = "#">Return to Program</button>
+                                      </div>
+                                      <div class = "col-10"></div>
+                                      
+                                    </div>
+                                </center>
+                              </div>
+                            </div>
+                        
+
+                    
+                    
 
           </div>
         </div>
@@ -169,6 +1463,6 @@
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="lib/Framework7/js/framework7.min.js"></script>
     <!-- Path to your app js-->
-    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/time.js"></script>
   </body>
 </html>

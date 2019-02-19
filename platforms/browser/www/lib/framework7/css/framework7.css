@@ -138,6 +138,9 @@ p {
 .ios a.color-red {
   color: #ff3b30;
 }
+.ios a.color-gold {
+  color: #d4af37;
+}
 .ios a.color-green {
   color: #4cd964;
 }
@@ -209,6 +212,9 @@ p {
 }
 .md a.color-red {
   color: #f44336;
+}
+.md a.color-gold {
+  color: #d4af37;
 }
 .md a.color-green {
   color: #4caf50;
@@ -1744,6 +1750,10 @@ html.with-statusbar.device-iphone-x .framework7-root {
 .ios .tabbar.color-red a.tab-link-active {
   color: #ff3b30;
 }
+.ios .tabbar-labels.color-gold a.tab-link-active,
+.ios .tabbar.color-gold a.tab-link-active {
+  color: #d4af37;
+}
 .ios .tabbar-labels.color-green a.tab-link-active,
 .ios .tabbar.color-green a.tab-link-active {
   color: #4cd964;
@@ -2634,6 +2644,9 @@ html.with-statusbar.device-iphone-x .framework7-root {
 }
 .md .subnavbar.color-red {
   background: #f44336;
+}
+.md .subnavbar.color-gold {
+  background: #d4af37;
 }
 .md .subnavbar.color-green {
   background: #4caf50;
@@ -4547,6 +4560,15 @@ html.device-pixel-ratio-3 .ios li:last-child li .item-inner:after {
 .ios .list li.color-red .item-link {
   color: #ff3b30;
 }
+.ios .list .list-button.color-gold,
+.ios .list li.color-gold .list-button,
+.ios .links-list li.color-gold a,
+.ios .simple-list li.color-gold,
+.ios .links-list a.color-gold,
+.ios .list .item-link.color-gold,
+.ios .list li.color-gold .item-link {
+  color: #d4af37;
+}
 .ios .list .list-button.color-green,
 .ios .list li.color-green .list-button,
 .ios .links-list li.color-green a,
@@ -5359,6 +5381,15 @@ html.device-pixel-ratio-3 .md li:last-child li .item-inner:after {
 .md .list li.color-red .item-link {
   color: #f44336;
 }
+.md .list .list-button.color-gold,
+.md .list li.color-gold .list-button,
+.md .links-list li.color-gold a,
+.md .simple-list li.color-gold,
+.md .links-list a.color-gold,
+.md .list .item-link.color-gold,
+.md .list li.color-gold .item-link {
+  color: #d4af37;
+}
 .md .list .list-button.color-green,
 .md .list li.color-green .list-button,
 .md .links-list li.color-green a,
@@ -5960,6 +5991,10 @@ button {
   border-color: #ff3b30;
   color: #ff3b30;
 }
+.ios .button.color-gold {
+  border-color: #d4af37;
+  color: #d4af37;
+}
 .ios .button.color-red.active-state {
   background: rgba(255, 59, 48, 0.15);
 }
@@ -6385,6 +6420,66 @@ button {
 .md .color-red .button.button-outline {
   border-color: #f44336;
 }
+.md .color-theme-gold .button,
+        .md .color-gold .button {
+          color: #d4af37;
+        }
+        .md .color-theme-gold .button.button-fill,
+        .md .color-gold .button.button-fill,
+        .md .color-theme-gold .button.button-fill-md,
+        .md .color-gold .button.button-fill-md,
+        .md .color-theme-gold .button.button-active,
+        .md .color-gold .button.button-active,
+        .md .color-theme-gold .button.tab-link-active,
+        .md .color-gold .button.tab-link-active {
+          background-color: #d4af37;
+          color: #fff;
+        }
+        .md .color-theme-gold .button.button-fill.active-state,
+        .md .color-gold .button.button-fill.active-state,
+        .md .color-theme-gold .button.button-fill-md.active-state,
+        .md .color-gold .button.button-fill-md.active-state,
+        .md .color-theme-gold .button.button-active.active-state,
+        .md .color-gold .button.button-active.active-state,
+        .md .color-theme-gold .button.tab-link-active.active-state,
+        .md .color-gold .button.tab-link-active.active-state {
+          background: #d4af37;
+        }
+        .md .color-theme-gold .button.button-outline,
+        .md .color-gold .button.button-outline {
+          border-color: #d4af37;
+        }
+
+        .ios .button.color-gold {
+          border-color: #d4af37;
+          color : #d4af37;
+        }
+        .ios .button.color-gold.active-state {
+          background: rgba(255, 59, 48, 0.15);
+        }
+        .ios .button.color-gold.button-active,
+        .ios .button.color-gold.tab-link-active,
+        .ios .button.color-gold.button-fill,
+        .ios .button.color-gold.button-fill-ios {
+          color: #fff;
+        }
+        .ios .button.color-gold.button-active,
+        .ios .button.color-gold.tab-link-active {
+          background: #d4af37;
+        }
+        .ios .button.color-gold.button-fill,
+        .ios .button.color-gold.button-fill-ios {
+          background: #d4af37;
+          border-color: transparent;
+        }
+        .ios .button.color-gold.button-small.button-fill.active-state,
+        .ios .button.color-gold.button-small-ios.button-fill.active-state,
+        .ios .button.color-gold.button-small.button-fill-ios.active-state,
+        .ios .button.color-gold.button-small-ios.button-fill-ios.active-state {
+          color: #d4af37;
+          border: 2px solid #d4af37;
+          background-color: transparent;
+        }
 .md .color-theme-green .button,
 .md .color-green .button {
   color: #4caf50;

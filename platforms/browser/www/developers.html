@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/Framework7/css/framework7.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+      .page-content{
+        background-color: #f4eff4
+      }
+      .item-link{
+        background-color: #ffffff
+      }
+    </style>
+
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+
+          <div style = "background-image: url('lib/img/back.jpg')" class="navbar">
+            <div class="navbar-inner" >
+            <div class="left">
+                    <a href = "index.html" class="link back">
+                            <i class="icon icon-back"></i>
+                            <span class="ios-only">Back</span>
+                    </a>
+            </div>
+            <div style ="color: rgb(189, 189, 189)" class = "title">Developers</div>
+            </div>
+          </div>
+          <!-- Toolbar -->
+          <!--<div class="toolbar">
+            <div class="toolbar-inner">-->
+              <!-- Toolbar links -->
+            <!--</div>
+          </div>-->
+
+          <!-- Scrollable page content -->
+          <div style = "background-image: url('lib/img/classic_backgroundn.jpeg'); background-repeat: no-repeat; background-size:cover;" class="page-content">
+              
+            <div class="card">
+              <div style = "background-image: url('lib/img/white.jpg'); font-size:20px" class="card-header"><b>The Developers:</b></div>
+              <div style="background-image: url('lib/img/white.jpg');" class="card-content">
+                <div class="list media-list">
+                  <ul>
+                    <li class="item-content">
+                      <div class="item-media"><img src="lib/img/fuentes.jpg
+                        " width="74"/></div>
+                      <div class="item-inner">
+                        <div class="item-title-row">
+                          <div class="item-title">Fuentes, Franz Luigi A.</div>
+                        </div>
+                        <div class="item-subtitle"><img src="lib/img/facebook.png" width="12"/>  /Franz Luigi Fuentes</div><br>
+                        <div style = "font-size:15px"class="item-subtitle"><i>"Hello darkness my old friend..."</i></div>
+                      </div>
+                    </li>
+                    <li class="item-content">
+                      <div class="item-media"><img src="lib/img/lam.jpg" width="74"/></div>
+                      <div class="item-inner">
+                        <div class="item-title-row">
+                          <div class="item-title">Lam, Edward Kevin S.</div>
+                        </div>
+                        <div class="item-subtitle"><img src="lib/img/facebook.png" width="12"/>  /Kevin Lam</div><br>
+                        <div style = "font-size:15px"class="item-subtitle"><i>"Lanjao La Soimai Rice"</i></div>
+                      </div>
+                    </li>
+                    <li class="item-content">
+                      <div class="item-media"><img src="lib/img/pedrosa.jpg" width="74"/></div>
+                      <div class="item-inner">
+                        <div class="item-title-row">
+                          <div class="item-title">Pedrosa, Brea Samantha F.</div>
+                        </div>
+                        <div class="item-subtitle"><img src="lib/img/facebook.png" width="12"/>  /Brea Pedrosa</div><br>
+                        <div style = "font-size:15px"class="item-subtitle"><i>"Nothing is true, everything is permitted"</i></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="lib/Framework7/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
